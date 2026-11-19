@@ -1,0 +1,10 @@
+name: debug-ab
+on: workflow_dispatch
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync --frozen --no-dev && uv run --no-dev python -m scripts.ab_gl
