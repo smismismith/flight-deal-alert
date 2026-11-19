@@ -150,3 +150,18 @@ def test_insight_partial_values():
     assert got.typical_low_krw is None and got.typical_high_krw == 400000 and got.history == []
     assert fl.parse_payload(make_payload([], insight=[7])).insight.google_code == 7
     assert fl.parse_html(make_html(make_payload([make_item(5)]))).flights[0].price_krw == 5
+
+
+def test_google_error_response_is_retryable_not_parse_error():
+    """Google 의 일시 오류 응답(ErrorResponse)은 해석 오류가 아니라 재시도 대상으로 분류한다."""
+    import pytest
+    from collector import flights as F
+
+    html = (
+        '<html><script class="ds:1" nonce="x">AF_initDataCallback({key: \'ds:1\',  data:[13,null,'
+        '[["type.googleapis.com/travel.frontend.flights.ErrorResponse",[[null,[[1,2,3]],0,"a","b"],0]]]],'
+        "errorHasStatus: true,});</script></html>"
+    )
+    with pytest.raises(F.UnexpectedPageError):
+        F.extract_payload(html)
+    assert F.OTHER in F.RETRYABLE

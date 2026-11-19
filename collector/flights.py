@@ -126,6 +126,10 @@ def extract_payload(html: str) -> Any:
             raise BotCheckError("봇 확인 페이지 응답")
         raise UnexpectedPageError("ds:1 스크립트가 없는 응답")
     js = m.group(1)
+    # Google 이 일시적인 서버 오류를 반환한 경우(ErrorResponse). 같은 조회를 다시 요청하면 대개 성공하므로
+    # 재시도 대상(other)으로 분류한다.
+    if "errorHasStatus: true" in js or "flights.ErrorResponse" in js:
+        raise UnexpectedPageError("Google 오류 응답(ErrorResponse)")
     try:
         return json.loads(js.split("data:", 1)[1].rsplit(",", 1)[0])
     except (IndexError, ValueError) as e:
