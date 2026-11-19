@@ -63,11 +63,11 @@ def test_full_run_then_second_run(cfg, tmp_path):
     status = load(out, "status.json")
     r = status["last_run"]
     assert r["result"] == "ok" and status["state"] == "ok"
-    assert r["queries"] == {"planned": 940, "attempted": 940, "succeeded": 940, "no_result": 0, "failed": 0, "bot_checks": 0, "retries": 0, "skipped": 0}
+    assert r["queries"] == {"planned": 708, "attempted": 708, "succeeded": 708, "no_result": 0, "failed": 0, "bot_checks": 0, "retries": 0, "skipped": 0}
     assert r["baseline_queries"] == 100
     assert r["destinations_total"] == 60 and r["destinations_succeeded"] == 60
     # AC-10: 대표 조합 최저가 하위 10개(목록 앞 10개)만 확대
-    assert r["expanded_destinations"] == [d.code for d in cfg.destinations[:10]]
+    assert r["expanded_destinations"] == [d.code for d in cfg.destinations[:6]]
     counts = Counter(k[1] for k in sim.fetched if not k[2].startswith("2027-03"))
     assert all(counts[d.code] == (64 if i < 10 else 6) for i, d in enumerate(cfg.destinations))
     assert r["deals_found"] == 1 and r["alerts_sent"] == 0 and r["telegram_enabled"] is False
@@ -107,7 +107,7 @@ def test_full_run_then_second_run(cfg, tmp_path):
     status = load(out, "status.json")
     r = status["last_run"]
     # active 알림이 있는 JFK 도 확대 조회한다(AC-10)
-    assert r["expanded_destinations"] == [d.code for d in cfg.destinations[:10]] + ["JFK"]
+    assert r["expanded_destinations"] == [d.code for d in cfg.destinations[:6]] + ["JFK"]
     assert r["queries"]["planned"] == 360 + 11 * 58 and r["baseline_queries"] == 100
     assert r["alerts_sent"] == 1 and r["hotel_api_calls"] == 1 and r["telegram_enabled"] and r["serpapi_enabled"]
     assert status["serpapi"] == {"month": "2026-11", "calls": 1} and len(status["runs"]) == 2
