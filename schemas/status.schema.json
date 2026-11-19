@@ -1,0 +1,305 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://flight-deal-alert.local/schemas/status.schema.json",
+  "title": "data/status.json",
+  "description": "수집 상태. runs 는 최신순 최대 30건이며 runs[0] 은 last_run 과 같다.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "updated_at",
+    "state",
+    "consecutive_failures",
+    "stop_notice_sent",
+    "last_success_at",
+    "serpapi",
+    "last_run",
+    "runs"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "updated_at": {
+      "$ref": "#/$defs/iso_kst"
+    },
+    "state": {
+      "enum": [
+        "ok",
+        "partial",
+        "failed",
+        "stopped"
+      ],
+      "description": "마지막 실행 결과. 연속 실패가 3회 이상이면 stopped"
+    },
+    "consecutive_failures": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "stop_notice_sent": {
+      "type": "boolean"
+    },
+    "last_success_at": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/iso_kst",
+          "description": "result 가 ok 또는 partial 인 마지막 실행의 종료 시각"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "serpapi": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "month",
+        "calls"
+      ],
+      "properties": {
+        "month": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}$"
+        },
+        "calls": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "last_run": {
+      "$ref": "#/$defs/run"
+    },
+    "runs": {
+      "type": "array",
+      "maxItems": 30,
+      "items": {
+        "$ref": "#/$defs/run"
+      }
+    }
+  },
+  "$defs": {
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "iata": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "iso_kst": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\+09:00$",
+      "description": "ISO 8601, KST 고정. 예: 2026-11-19T08:02:11+09:00"
+    },
+    "run": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "run_id",
+        "started_at",
+        "finished_at",
+        "duration_seconds",
+        "result",
+        "queries",
+        "baseline_queries",
+        "destinations_total",
+        "destinations_succeeded",
+        "failed_destinations",
+        "expanded_destinations",
+        "deals_found",
+        "alerts_sent",
+        "hotel_api_calls",
+        "telegram_enabled",
+        "serpapi_enabled",
+        "aborted_reason",
+        "errors"
+      ],
+      "properties": {
+        "run_id": {
+          "$ref": "#/$defs/run_id"
+        },
+        "started_at": {
+          "$ref": "#/$defs/iso_kst"
+        },
+        "finished_at": {
+          "$ref": "#/$defs/iso_kst"
+        },
+        "duration_seconds": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "result": {
+          "enum": [
+            "ok",
+            "partial",
+            "failed"
+          ]
+        },
+        "queries": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "planned",
+            "attempted",
+            "succeeded",
+            "no_result",
+            "failed",
+            "bot_checks",
+            "retries",
+            "skipped"
+          ],
+          "properties": {
+            "planned": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "attempted": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "succeeded": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "no_result": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "failed": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "bot_checks": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "retries": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "skipped": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "baseline_queries": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "destinations_total": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "destinations_succeeded": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "failed_destinations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/iata"
+          }
+        },
+        "expanded_destinations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/iata"
+          }
+        },
+        "deals_found": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "alerts_sent": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "hotel_api_calls": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "telegram_enabled": {
+          "type": "boolean"
+        },
+        "serpapi_enabled": {
+          "type": "boolean"
+        },
+        "aborted_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "errors": {
+          "type": "array",
+          "maxItems": 50,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "destination",
+              "depart_date",
+              "return_date",
+              "kind",
+              "message"
+            ],
+            "properties": {
+              "destination": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/iata"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "depart_date": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/date"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "return_date": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/date"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "kind": {
+                "enum": [
+                  "bot_check",
+                  "network",
+                  "parse",
+                  "hotel",
+                  "telegram",
+                  "other"
+                ]
+              },
+              "message": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "description": "실행 1회의 결과"
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^\\d{8}T\\d{6}$",
+      "description": "실행 시작 시각(KST) YYYYMMDDTHHMMSS"
+    }
+  }
+}

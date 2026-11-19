@@ -1,0 +1,2040 @@
+{
+ "schema_version": 1,
+ "updated_at": "2026-11-19T09:24:48+09:00",
+ "alerts": [
+  {
+   "id": "DAD-20261119T080211",
+   "origin": "ICN",
+   "destination": "DAD",
+   "city_ko": "다낭",
+   "country_ko": "베트남",
+   "region": "동남아",
+   "status": "active",
+   "kind": "realert",
+   "created_at": "2026-11-19T09:24:11+09:00",
+   "ended_at": null,
+   "alerted_price_krw": 338000,
+   "previous_alerted_price_krw": 359000,
+   "fare": {
+    "origin": "ICN",
+    "destination": "DAD",
+    "city_ko": "다낭",
+    "country_ko": "베트남",
+    "region": "동남아",
+    "depart_date": "2026-12-21",
+    "return_date": "2026-12-25",
+    "nights": 4,
+    "is_representative": true,
+    "price_krw": 338000,
+    "airline_code": "VJ",
+    "airlines": [
+     "비엣젯항공"
+    ],
+    "stops": 0,
+    "duration_minutes": 295,
+    "depart_time": "18:40",
+    "arrive_time": "21:35",
+    "arrive_date": "2026-12-21",
+    "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMjFqBRIDSUNOcgUSA0RBRBoaEgoyMDI2LTEyLTI1agUSA0RBRHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+    "insight": {
+     "google_code": 1,
+     "current_price_krw": 338000,
+     "usual_price_krw": 430100,
+     "typical_low_krw": 365000,
+     "typical_high_krw": 560000,
+     "level": "low",
+     "history_min_krw": 375500,
+     "history_p10_krw": 381600,
+     "history_count": 61,
+     "history": [
+      {
+       "date": "2026-09-20",
+       "price_krw": 442400
+      },
+      {
+       "date": "2026-09-21",
+       "price_krw": 434600
+      },
+      {
+       "date": "2026-09-22",
+       "price_krw": 438100
+      },
+      {
+       "date": "2026-09-23",
+       "price_krw": 440000
+      },
+      {
+       "date": "2026-09-24",
+       "price_krw": 446300
+      },
+      {
+       "date": "2026-09-25",
+       "price_krw": 444000
+      },
+      {
+       "date": "2026-09-26",
+       "price_krw": 431000
+      },
+      {
+       "date": "2026-09-27",
+       "price_krw": 435800
+      },
+      {
+       "date": "2026-09-28",
+       "price_krw": 440300
+      },
+      {
+       "date": "2026-09-29",
+       "price_krw": 439100
+      },
+      {
+       "date": "2026-09-30",
+       "price_krw": 435700
+      },
+      {
+       "date": "2026-10-01",
+       "price_krw": 424000
+      },
+      {
+       "date": "2026-10-02",
+       "price_krw": 431300
+      },
+      {
+       "date": "2026-10-03",
+       "price_krw": 441600
+      },
+      {
+       "date": "2026-10-04",
+       "price_krw": 434500
+      },
+      {
+       "date": "2026-10-05",
+       "price_krw": 424800
+      },
+      {
+       "date": "2026-10-06",
+       "price_krw": 422300
+      },
+      {
+       "date": "2026-10-07",
+       "price_krw": 419800
+      },
+      {
+       "date": "2026-10-08",
+       "price_krw": 418000
+      },
+      {
+       "date": "2026-10-09",
+       "price_krw": 423600
+      },
+      {
+       "date": "2026-10-10",
+       "price_krw": 433400
+      },
+      {
+       "date": "2026-10-11",
+       "price_krw": 428100
+      },
+      {
+       "date": "2026-10-12",
+       "price_krw": 417900
+      },
+      {
+       "date": "2026-10-13",
+       "price_krw": 412200
+      },
+      {
+       "date": "2026-10-14",
+       "price_krw": 414300
+      },
+      {
+       "date": "2026-10-15",
+       "price_krw": 411100
+      },
+      {
+       "date": "2026-10-16",
+       "price_krw": 425500
+      },
+      {
+       "date": "2026-10-17",
+       "price_krw": 421100
+      },
+      {
+       "date": "2026-10-18",
+       "price_krw": 411100
+      },
+      {
+       "date": "2026-10-19",
+       "price_krw": 403900
+      },
+      {
+       "date": "2026-10-20",
+       "price_krw": 404400
+      },
+      {
+       "date": "2026-10-21",
+       "price_krw": 413000
+      },
+      {
+       "date": "2026-10-22",
+       "price_krw": 417900
+      },
+      {
+       "date": "2026-10-23",
+       "price_krw": 400300
+      },
+      {
+       "date": "2026-10-24",
+       "price_krw": 411100
+      },
+      {
+       "date": "2026-10-25",
+       "price_krw": 396900
+      },
+      {
+       "date": "2026-10-26",
+       "price_krw": 396400
+      },
+      {
+       "date": "2026-10-27",
+       "price_krw": 410900
+      },
+      {
+       "date": "2026-10-28",
+       "price_krw": 393400
+      },
+      {
+       "date": "2026-10-29",
+       "price_krw": 410000
+      },
+      {
+       "date": "2026-10-30",
+       "price_krw": 398100
+      },
+      {
+       "date": "2026-10-31",
+       "price_krw": 407900
+      },
+      {
+       "date": "2026-11-01",
+       "price_krw": 407400
+      },
+      {
+       "date": "2026-11-02",
+       "price_krw": 392200
+      },
+      {
+       "date": "2026-11-03",
+       "price_krw": 396000
+      },
+      {
+       "date": "2026-11-04",
+       "price_krw": 390200
+      },
+      {
+       "date": "2026-11-05",
+       "price_krw": 396700
+      },
+      {
+       "date": "2026-11-06",
+       "price_krw": 396000
+      },
+      {
+       "date": "2026-11-07",
+       "price_krw": 389900
+      },
+      {
+       "date": "2026-11-08",
+       "price_krw": 381600
+      },
+      {
+       "date": "2026-11-09",
+       "price_krw": 397700
+      },
+      {
+       "date": "2026-11-10",
+       "price_krw": 392600
+      },
+      {
+       "date": "2026-11-11",
+       "price_krw": 387600
+      },
+      {
+       "date": "2026-11-12",
+       "price_krw": 376100
+      },
+      {
+       "date": "2026-11-13",
+       "price_krw": 376200
+      },
+      {
+       "date": "2026-11-14",
+       "price_krw": 382900
+      },
+      {
+       "date": "2026-11-15",
+       "price_krw": 385900
+      },
+      {
+       "date": "2026-11-16",
+       "price_krw": 375500
+      },
+      {
+       "date": "2026-11-17",
+       "price_krw": 380600
+      },
+      {
+       "date": "2026-11-18",
+       "price_krw": 375900
+      },
+      {
+       "date": "2026-11-19",
+       "price_krw": 338000
+      }
+     ]
+    },
+    "judgement": {
+     "evaluated": [
+      "google_low",
+      "offseason",
+      "own_history",
+      "google_60d"
+     ],
+     "matched": [
+      "google_low",
+      "own_history",
+      "google_60d"
+     ],
+     "matched_count": 3,
+     "is_deal": true,
+     "baseline_price_krw": 299700,
+     "pct_vs_baseline": 12.8,
+     "own_median_krw": 423000,
+     "own_samples": 42,
+     "pct_vs_own_median": -20.1,
+     "pct_vs_typical_low": -7.4,
+     "pct_vs_60d_min": -10.0
+    },
+    "collected_at": "2026-11-19T08:41:38+09:00"
+   },
+   "current_fare": {
+    "origin": "ICN",
+    "destination": "DAD",
+    "city_ko": "다낭",
+    "country_ko": "베트남",
+    "region": "동남아",
+    "depart_date": "2026-12-21",
+    "return_date": "2026-12-25",
+    "nights": 4,
+    "is_representative": true,
+    "price_krw": 338000,
+    "airline_code": "VJ",
+    "airlines": [
+     "비엣젯항공"
+    ],
+    "stops": 0,
+    "duration_minutes": 295,
+    "depart_time": "18:40",
+    "arrive_time": "21:35",
+    "arrive_date": "2026-12-21",
+    "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMjFqBRIDSUNOcgUSA0RBRBoaEgoyMDI2LTEyLTI1agUSA0RBRHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+    "insight": {
+     "google_code": 1,
+     "current_price_krw": 338000,
+     "usual_price_krw": 430100,
+     "typical_low_krw": 365000,
+     "typical_high_krw": 560000,
+     "level": "low",
+     "history_min_krw": 375500,
+     "history_p10_krw": 381600,
+     "history_count": 61,
+     "history": [
+      {
+       "date": "2026-09-20",
+       "price_krw": 442400
+      },
+      {
+       "date": "2026-09-21",
+       "price_krw": 434600
+      },
+      {
+       "date": "2026-09-22",
+       "price_krw": 438100
+      },
+      {
+       "date": "2026-09-23",
+       "price_krw": 440000
+      },
+      {
+       "date": "2026-09-24",
+       "price_krw": 446300
+      },
+      {
+       "date": "2026-09-25",
+       "price_krw": 444000
+      },
+      {
+       "date": "2026-09-26",
+       "price_krw": 431000
+      },
+      {
+       "date": "2026-09-27",
+       "price_krw": 435800
+      },
+      {
+       "date": "2026-09-28",
+       "price_krw": 440300
+      },
+      {
+       "date": "2026-09-29",
+       "price_krw": 439100
+      },
+      {
+       "date": "2026-09-30",
+       "price_krw": 435700
+      },
+      {
+       "date": "2026-10-01",
+       "price_krw": 424000
+      },
+      {
+       "date": "2026-10-02",
+       "price_krw": 431300
+      },
+      {
+       "date": "2026-10-03",
+       "price_krw": 441600
+      },
+      {
+       "date": "2026-10-04",
+       "price_krw": 434500
+      },
+      {
+       "date": "2026-10-05",
+       "price_krw": 424800
+      },
+      {
+       "date": "2026-10-06",
+       "price_krw": 422300
+      },
+      {
+       "date": "2026-10-07",
+       "price_krw": 419800
+      },
+      {
+       "date": "2026-10-08",
+       "price_krw": 418000
+      },
+      {
+       "date": "2026-10-09",
+       "price_krw": 423600
+      },
+      {
+       "date": "2026-10-10",
+       "price_krw": 433400
+      },
+      {
+       "date": "2026-10-11",
+       "price_krw": 428100
+      },
+      {
+       "date": "2026-10-12",
+       "price_krw": 417900
+      },
+      {
+       "date": "2026-10-13",
+       "price_krw": 412200
+      },
+      {
+       "date": "2026-10-14",
+       "price_krw": 414300
+      },
+      {
+       "date": "2026-10-15",
+       "price_krw": 411100
+      },
+      {
+       "date": "2026-10-16",
+       "price_krw": 425500
+      },
+      {
+       "date": "2026-10-17",
+       "price_krw": 421100
+      },
+      {
+       "date": "2026-10-18",
+       "price_krw": 411100
+      },
+      {
+       "date": "2026-10-19",
+       "price_krw": 403900
+      },
+      {
+       "date": "2026-10-20",
+       "price_krw": 404400
+      },
+      {
+       "date": "2026-10-21",
+       "price_krw": 413000
+      },
+      {
+       "date": "2026-10-22",
+       "price_krw": 417900
+      },
+      {
+       "date": "2026-10-23",
+       "price_krw": 400300
+      },
+      {
+       "date": "2026-10-24",
+       "price_krw": 411100
+      },
+      {
+       "date": "2026-10-25",
+       "price_krw": 396900
+      },
+      {
+       "date": "2026-10-26",
+       "price_krw": 396400
+      },
+      {
+       "date": "2026-10-27",
+       "price_krw": 410900
+      },
+      {
+       "date": "2026-10-28",
+       "price_krw": 393400
+      },
+      {
+       "date": "2026-10-29",
+       "price_krw": 410000
+      },
+      {
+       "date": "2026-10-30",
+       "price_krw": 398100
+      },
+      {
+       "date": "2026-10-31",
+       "price_krw": 407900
+      },
+      {
+       "date": "2026-11-01",
+       "price_krw": 407400
+      },
+      {
+       "date": "2026-11-02",
+       "price_krw": 392200
+      },
+      {
+       "date": "2026-11-03",
+       "price_krw": 396000
+      },
+      {
+       "date": "2026-11-04",
+       "price_krw": 390200
+      },
+      {
+       "date": "2026-11-05",
+       "price_krw": 396700
+      },
+      {
+       "date": "2026-11-06",
+       "price_krw": 396000
+      },
+      {
+       "date": "2026-11-07",
+       "price_krw": 389900
+      },
+      {
+       "date": "2026-11-08",
+       "price_krw": 381600
+      },
+      {
+       "date": "2026-11-09",
+       "price_krw": 397700
+      },
+      {
+       "date": "2026-11-10",
+       "price_krw": 392600
+      },
+      {
+       "date": "2026-11-11",
+       "price_krw": 387600
+      },
+      {
+       "date": "2026-11-12",
+       "price_krw": 376100
+      },
+      {
+       "date": "2026-11-13",
+       "price_krw": 376200
+      },
+      {
+       "date": "2026-11-14",
+       "price_krw": 382900
+      },
+      {
+       "date": "2026-11-15",
+       "price_krw": 385900
+      },
+      {
+       "date": "2026-11-16",
+       "price_krw": 375500
+      },
+      {
+       "date": "2026-11-17",
+       "price_krw": 380600
+      },
+      {
+       "date": "2026-11-18",
+       "price_krw": 375900
+      },
+      {
+       "date": "2026-11-19",
+       "price_krw": 338000
+      }
+     ]
+    },
+    "judgement": {
+     "evaluated": [
+      "google_low",
+      "offseason",
+      "own_history",
+      "google_60d"
+     ],
+     "matched": [
+      "google_low",
+      "own_history",
+      "google_60d"
+     ],
+     "matched_count": 3,
+     "is_deal": true,
+     "baseline_price_krw": 299700,
+     "pct_vs_baseline": 12.8,
+     "own_median_krw": 423000,
+     "own_samples": 42,
+     "pct_vs_own_median": -20.1,
+     "pct_vs_typical_low": -7.4,
+     "pct_vs_60d_min": -10.0
+    },
+    "collected_at": "2026-11-19T08:41:38+09:00"
+   },
+   "current_checked_at": "2026-11-19T09:24:48+09:00",
+   "notification": {
+    "channel": "telegram",
+    "sent": true,
+    "sent_at": "2026-11-19T09:24:13+09:00",
+    "attempts": 1,
+    "error": null
+   },
+   "hotels": {
+    "source": "serpapi",
+    "query": "다낭 호텔",
+    "check_in": "2026-12-21",
+    "check_out": "2026-12-25",
+    "nights": 4,
+    "fetched_at": "2026-11-19T09:23:11+09:00",
+    "links": {
+     "google_hotels": "https://www.google.com/travel/search?q=%EB%8B%A4%EB%82%AD+%ED%98%B8%ED%85%94&checkin=2026-12-21&checkout=2026-12-25&hl=ko&gl=kr&curr=KRW",
+     "agoda": "https://www.agoda.com/ko-kr/search?textToSearch=%EB%8B%A4%EB%82%AD+%ED%98%B8%ED%85%94&checkIn=2026-12-21&los=4&rooms=1&adults=1&currency=KRW"
+    },
+    "items": [
+     {
+      "name": "사노우바 다낭 호텔",
+      "rate_per_night_krw": 38900,
+      "total_rate_krw": 155600,
+      "rating": 4.3,
+      "deal": "평소보다 21% 저렴",
+      "link": "https://www.google.com/travel/search?q=%EC%82%AC%EB%85%B8%EC%9A%B0%EB%B0%94+%EB%8B%A4%EB%82%AD+%ED%98%B8%ED%85%94&checkin=2026-12-21&checkout=2026-12-25&hl=ko&gl=kr&curr=KRW"
+     },
+     {
+      "name": "치 부티크 호텔 미케",
+      "rate_per_night_krw": 47600,
+      "total_rate_krw": 190400,
+      "rating": 4.4,
+      "deal": "특가",
+      "link": "https://www.google.com/travel/search?q=%EC%B9%98+%EB%B6%80%ED%8B%B0%ED%81%AC+%ED%98%B8%ED%85%94+%EB%AF%B8%EC%BC%80&checkin=2026-12-21&checkout=2026-12-25&hl=ko&gl=kr&curr=KRW"
+     },
+     {
+      "name": "래디슨 호텔 다낭",
+      "rate_per_night_krw": 78400,
+      "total_rate_krw": 313600,
+      "rating": 4.5,
+      "deal": "평소보다 18% 저렴",
+      "link": "https://www.google.com/travel/search?q=%EB%9E%98%EB%94%94%EC%8A%A8+%ED%98%B8%ED%85%94+%EB%8B%A4%EB%82%AD&checkin=2026-12-21&checkout=2026-12-25&hl=ko&gl=kr&curr=KRW"
+     },
+     {
+      "name": "멜리아 빈펄 다낭 리버프런트",
+      "rate_per_night_krw": 92700,
+      "total_rate_krw": 370800,
+      "rating": 4.6,
+      "deal": "특가",
+      "link": "https://www.google.com/travel/search?q=%EB%A9%9C%EB%A6%AC%EC%95%84+%EB%B9%88%ED%8E%84+%EB%8B%A4%EB%82%AD+%EB%A6%AC%EB%B2%84%ED%94%84%EB%9F%B0%ED%8A%B8&checkin=2026-12-21&checkout=2026-12-25&hl=ko&gl=kr&curr=KRW"
+     },
+     {
+      "name": "풀만 다낭 비치 리조트",
+      "rate_per_night_krw": 198000,
+      "total_rate_krw": 792000,
+      "rating": 4.7,
+      "deal": "평소보다 15% 저렴",
+      "link": "https://www.google.com/travel/search?q=%ED%92%80%EB%A7%8C+%EB%8B%A4%EB%82%AD+%EB%B9%84%EC%B9%98+%EB%A6%AC%EC%A1%B0%ED%8A%B8&checkin=2026-12-21&checkout=2026-12-25&hl=ko&gl=kr&curr=KRW"
+     }
+    ]
+   }
+  },
+  {
+   "id": "FUK-20261118T140211",
+   "origin": "ICN",
+   "destination": "FUK",
+   "city_ko": "후쿠오카",
+   "country_ko": "일본",
+   "region": "일본",
+   "status": "active",
+   "kind": "new",
+   "created_at": "2026-11-18T15:30:11+09:00",
+   "ended_at": null,
+   "alerted_price_krw": 219000,
+   "previous_alerted_price_krw": null,
+   "fare": {
+    "origin": "ICN",
+    "destination": "FUK",
+    "city_ko": "후쿠오카",
+    "country_ko": "일본",
+    "region": "일본",
+    "depart_date": "2026-12-18",
+    "return_date": "2026-12-21",
+    "nights": 3,
+    "is_representative": false,
+    "price_krw": 219000,
+    "airline_code": "TW",
+    "airlines": [
+     "티웨이항공"
+    ],
+    "stops": 0,
+    "duration_minutes": 85,
+    "depart_time": "07:35",
+    "arrive_time": "09:00",
+    "arrive_date": "2026-12-18",
+    "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMThqBRIDSUNOcgUSA0ZVSxoaEgoyMDI2LTEyLTIxagUSA0ZVS3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+    "insight": {
+     "google_code": 1,
+     "current_price_krw": 219000,
+     "usual_price_krw": 265000,
+     "typical_low_krw": 230000,
+     "typical_high_krw": 340000,
+     "level": "low",
+     "history_min_krw": 197700,
+     "history_p10_krw": 202300,
+     "history_count": 61,
+     "history": [
+      {
+       "date": "2026-09-19",
+       "price_krw": 217600
+      },
+      {
+       "date": "2026-09-20",
+       "price_krw": 247300
+      },
+      {
+       "date": "2026-09-21",
+       "price_krw": 221400
+      },
+      {
+       "date": "2026-09-22",
+       "price_krw": 203300
+      },
+      {
+       "date": "2026-09-23",
+       "price_krw": 220400
+      },
+      {
+       "date": "2026-09-24",
+       "price_krw": 223800
+      },
+      {
+       "date": "2026-09-25",
+       "price_krw": 206300
+      },
+      {
+       "date": "2026-09-26",
+       "price_krw": 238900
+      },
+      {
+       "date": "2026-09-27",
+       "price_krw": 202300
+      },
+      {
+       "date": "2026-09-28",
+       "price_krw": 225900
+      },
+      {
+       "date": "2026-09-29",
+       "price_krw": 232500
+      },
+      {
+       "date": "2026-09-30",
+       "price_krw": 239700
+      },
+      {
+       "date": "2026-10-01",
+       "price_krw": 230900
+      },
+      {
+       "date": "2026-10-02",
+       "price_krw": 213200
+      },
+      {
+       "date": "2026-10-03",
+       "price_krw": 197700
+      },
+      {
+       "date": "2026-10-04",
+       "price_krw": 221400
+      },
+      {
+       "date": "2026-10-05",
+       "price_krw": 233200
+      },
+      {
+       "date": "2026-10-06",
+       "price_krw": 197900
+      },
+      {
+       "date": "2026-10-07",
+       "price_krw": 247100
+      },
+      {
+       "date": "2026-10-08",
+       "price_krw": 238400
+      },
+      {
+       "date": "2026-10-09",
+       "price_krw": 203100
+      },
+      {
+       "date": "2026-10-10",
+       "price_krw": 251500
+      },
+      {
+       "date": "2026-10-11",
+       "price_krw": 204600
+      },
+      {
+       "date": "2026-10-12",
+       "price_krw": 222200
+      },
+      {
+       "date": "2026-10-13",
+       "price_krw": 237400
+      },
+      {
+       "date": "2026-10-14",
+       "price_krw": 235600
+      },
+      {
+       "date": "2026-10-15",
+       "price_krw": 251500
+      },
+      {
+       "date": "2026-10-16",
+       "price_krw": 249400
+      },
+      {
+       "date": "2026-10-17",
+       "price_krw": 246200
+      },
+      {
+       "date": "2026-10-18",
+       "price_krw": 212900
+      },
+      {
+       "date": "2026-10-19",
+       "price_krw": 224300
+      },
+      {
+       "date": "2026-10-20",
+       "price_krw": 209500
+      },
+      {
+       "date": "2026-10-21",
+       "price_krw": 201300
+      },
+      {
+       "date": "2026-10-22",
+       "price_krw": 240300
+      },
+      {
+       "date": "2026-10-23",
+       "price_krw": 198200
+      },
+      {
+       "date": "2026-10-24",
+       "price_krw": 201200
+      },
+      {
+       "date": "2026-10-25",
+       "price_krw": 225100
+      },
+      {
+       "date": "2026-10-26",
+       "price_krw": 220600
+      },
+      {
+       "date": "2026-10-27",
+       "price_krw": 215100
+      },
+      {
+       "date": "2026-10-28",
+       "price_krw": 244500
+      },
+      {
+       "date": "2026-10-29",
+       "price_krw": 225600
+      },
+      {
+       "date": "2026-10-30",
+       "price_krw": 213800
+      },
+      {
+       "date": "2026-10-31",
+       "price_krw": 207000
+      },
+      {
+       "date": "2026-11-01",
+       "price_krw": 227500
+      },
+      {
+       "date": "2026-11-02",
+       "price_krw": 227700
+      },
+      {
+       "date": "2026-11-03",
+       "price_krw": 229700
+      },
+      {
+       "date": "2026-11-04",
+       "price_krw": 235300
+      },
+      {
+       "date": "2026-11-05",
+       "price_krw": 204300
+      },
+      {
+       "date": "2026-11-06",
+       "price_krw": 250100
+      },
+      {
+       "date": "2026-11-07",
+       "price_krw": 237800
+      },
+      {
+       "date": "2026-11-08",
+       "price_krw": 247200
+      },
+      {
+       "date": "2026-11-09",
+       "price_krw": 243600
+      },
+      {
+       "date": "2026-11-10",
+       "price_krw": 250000
+      },
+      {
+       "date": "2026-11-11",
+       "price_krw": 232800
+      },
+      {
+       "date": "2026-11-12",
+       "price_krw": 204400
+      },
+      {
+       "date": "2026-11-13",
+       "price_krw": 233700
+      },
+      {
+       "date": "2026-11-14",
+       "price_krw": 241900
+      },
+      {
+       "date": "2026-11-15",
+       "price_krw": 242200
+      },
+      {
+       "date": "2026-11-16",
+       "price_krw": 233400
+      },
+      {
+       "date": "2026-11-17",
+       "price_krw": 242100
+      },
+      {
+       "date": "2026-11-18",
+       "price_krw": 219000
+      }
+     ]
+    },
+    "judgement": {
+     "evaluated": [
+      "google_low",
+      "offseason",
+      "own_history",
+      "google_60d"
+     ],
+     "matched": [
+      "google_low",
+      "offseason"
+     ],
+     "matched_count": 2,
+     "is_deal": true,
+     "baseline_price_krw": 224000,
+     "pct_vs_baseline": -2.2,
+     "own_median_krw": 255250,
+     "own_samples": 40,
+     "pct_vs_own_median": -14.2,
+     "pct_vs_typical_low": -4.8,
+     "pct_vs_60d_min": 10.8
+    },
+    "collected_at": "2026-11-18T14:43:11+09:00"
+   },
+   "current_fare": {
+    "origin": "ICN",
+    "destination": "FUK",
+    "city_ko": "후쿠오카",
+    "country_ko": "일본",
+    "region": "일본",
+    "depart_date": "2026-12-18",
+    "return_date": "2026-12-21",
+    "nights": 3,
+    "is_representative": false,
+    "price_krw": 219000,
+    "airline_code": "TW",
+    "airlines": [
+     "티웨이항공"
+    ],
+    "stops": 0,
+    "duration_minutes": 85,
+    "depart_time": "07:35",
+    "arrive_time": "09:00",
+    "arrive_date": "2026-12-18",
+    "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMThqBRIDSUNOcgUSA0ZVSxoaEgoyMDI2LTEyLTIxagUSA0ZVS3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+    "insight": {
+     "google_code": 1,
+     "current_price_krw": 219000,
+     "usual_price_krw": 265000,
+     "typical_low_krw": 230000,
+     "typical_high_krw": 340000,
+     "level": "low",
+     "history_min_krw": 198500,
+     "history_p10_krw": 203700,
+     "history_count": 61,
+     "history": [
+      {
+       "date": "2026-09-20",
+       "price_krw": 200900
+      },
+      {
+       "date": "2026-09-21",
+       "price_krw": 222700
+      },
+      {
+       "date": "2026-09-22",
+       "price_krw": 199800
+      },
+      {
+       "date": "2026-09-23",
+       "price_krw": 204600
+      },
+      {
+       "date": "2026-09-24",
+       "price_krw": 212900
+      },
+      {
+       "date": "2026-09-25",
+       "price_krw": 213900
+      },
+      {
+       "date": "2026-09-26",
+       "price_krw": 229800
+      },
+      {
+       "date": "2026-09-27",
+       "price_krw": 231400
+      },
+      {
+       "date": "2026-09-28",
+       "price_krw": 211800
+      },
+      {
+       "date": "2026-09-29",
+       "price_krw": 241500
+      },
+      {
+       "date": "2026-09-30",
+       "price_krw": 221200
+      },
+      {
+       "date": "2026-10-01",
+       "price_krw": 236500
+      },
+      {
+       "date": "2026-10-02",
+       "price_krw": 207500
+      },
+      {
+       "date": "2026-10-03",
+       "price_krw": 213200
+      },
+      {
+       "date": "2026-10-04",
+       "price_krw": 222300
+      },
+      {
+       "date": "2026-10-05",
+       "price_krw": 216100
+      },
+      {
+       "date": "2026-10-06",
+       "price_krw": 236100
+      },
+      {
+       "date": "2026-10-07",
+       "price_krw": 227400
+      },
+      {
+       "date": "2026-10-08",
+       "price_krw": 201300
+      },
+      {
+       "date": "2026-10-09",
+       "price_krw": 207200
+      },
+      {
+       "date": "2026-10-10",
+       "price_krw": 236500
+      },
+      {
+       "date": "2026-10-11",
+       "price_krw": 214900
+      },
+      {
+       "date": "2026-10-12",
+       "price_krw": 248300
+      },
+      {
+       "date": "2026-10-13",
+       "price_krw": 234200
+      },
+      {
+       "date": "2026-10-14",
+       "price_krw": 251600
+      },
+      {
+       "date": "2026-10-15",
+       "price_krw": 235800
+      },
+      {
+       "date": "2026-10-16",
+       "price_krw": 212400
+      },
+      {
+       "date": "2026-10-17",
+       "price_krw": 233100
+      },
+      {
+       "date": "2026-10-18",
+       "price_krw": 243000
+      },
+      {
+       "date": "2026-10-19",
+       "price_krw": 232500
+      },
+      {
+       "date": "2026-10-20",
+       "price_krw": 211400
+      },
+      {
+       "date": "2026-10-21",
+       "price_krw": 248500
+      },
+      {
+       "date": "2026-10-22",
+       "price_krw": 198500
+      },
+      {
+       "date": "2026-10-23",
+       "price_krw": 205700
+      },
+      {
+       "date": "2026-10-24",
+       "price_krw": 227500
+      },
+      {
+       "date": "2026-10-25",
+       "price_krw": 241400
+      },
+      {
+       "date": "2026-10-26",
+       "price_krw": 206700
+      },
+      {
+       "date": "2026-10-27",
+       "price_krw": 241600
+      },
+      {
+       "date": "2026-10-28",
+       "price_krw": 212700
+      },
+      {
+       "date": "2026-10-29",
+       "price_krw": 230900
+      },
+      {
+       "date": "2026-10-30",
+       "price_krw": 225900
+      },
+      {
+       "date": "2026-10-31",
+       "price_krw": 214700
+      },
+      {
+       "date": "2026-11-01",
+       "price_krw": 235700
+      },
+      {
+       "date": "2026-11-02",
+       "price_krw": 218700
+      },
+      {
+       "date": "2026-11-03",
+       "price_krw": 203700
+      },
+      {
+       "date": "2026-11-04",
+       "price_krw": 211700
+      },
+      {
+       "date": "2026-11-05",
+       "price_krw": 234100
+      },
+      {
+       "date": "2026-11-06",
+       "price_krw": 204500
+      },
+      {
+       "date": "2026-11-07",
+       "price_krw": 249000
+      },
+      {
+       "date": "2026-11-08",
+       "price_krw": 211200
+      },
+      {
+       "date": "2026-11-09",
+       "price_krw": 231000
+      },
+      {
+       "date": "2026-11-10",
+       "price_krw": 233900
+      },
+      {
+       "date": "2026-11-11",
+       "price_krw": 205500
+      },
+      {
+       "date": "2026-11-12",
+       "price_krw": 226900
+      },
+      {
+       "date": "2026-11-13",
+       "price_krw": 233100
+      },
+      {
+       "date": "2026-11-14",
+       "price_krw": 213100
+      },
+      {
+       "date": "2026-11-15",
+       "price_krw": 223000
+      },
+      {
+       "date": "2026-11-16",
+       "price_krw": 240400
+      },
+      {
+       "date": "2026-11-17",
+       "price_krw": 240000
+      },
+      {
+       "date": "2026-11-18",
+       "price_krw": 199400
+      },
+      {
+       "date": "2026-11-19",
+       "price_krw": 219000
+      }
+     ]
+    },
+    "judgement": {
+     "evaluated": [
+      "google_low",
+      "offseason",
+      "own_history",
+      "google_60d"
+     ],
+     "matched": [
+      "google_low",
+      "offseason"
+     ],
+     "matched_count": 2,
+     "is_deal": true,
+     "baseline_price_krw": 224000,
+     "pct_vs_baseline": -2.2,
+     "own_median_krw": 255250,
+     "own_samples": 42,
+     "pct_vs_own_median": -14.2,
+     "pct_vs_typical_low": -4.8,
+     "pct_vs_60d_min": 10.3
+    },
+    "collected_at": "2026-11-19T08:09:46+09:00"
+   },
+   "current_checked_at": "2026-11-19T09:24:48+09:00",
+   "notification": {
+    "channel": "telegram",
+    "sent": true,
+    "sent_at": "2026-11-18T15:30:13+09:00",
+    "attempts": 1,
+    "error": null
+   },
+   "hotels": {
+    "source": "links",
+    "query": "후쿠오카 호텔",
+    "check_in": "2026-12-18",
+    "check_out": "2026-12-21",
+    "nights": 3,
+    "fetched_at": null,
+    "links": {
+     "google_hotels": "https://www.google.com/travel/search?q=%ED%9B%84%EC%BF%A0%EC%98%A4%EC%B9%B4+%ED%98%B8%ED%85%94&checkin=2026-12-18&checkout=2026-12-21&hl=ko&gl=kr&curr=KRW",
+     "agoda": "https://www.agoda.com/ko-kr/search?textToSearch=%ED%9B%84%EC%BF%A0%EC%98%A4%EC%B9%B4+%ED%98%B8%ED%85%94&checkIn=2026-12-18&los=3&rooms=1&adults=1&currency=KRW"
+    },
+    "items": []
+   }
+  },
+  {
+   "id": "DAD-20261117T210211",
+   "origin": "ICN",
+   "destination": "DAD",
+   "city_ko": "다낭",
+   "country_ko": "베트남",
+   "region": "동남아",
+   "status": "replaced",
+   "kind": "new",
+   "created_at": "2026-11-17T22:33:11+09:00",
+   "ended_at": "2026-11-19T09:24:11+09:00",
+   "alerted_price_krw": 359000,
+   "previous_alerted_price_krw": null,
+   "fare": {
+    "origin": "ICN",
+    "destination": "DAD",
+    "city_ko": "다낭",
+    "country_ko": "베트남",
+    "region": "동남아",
+    "depart_date": "2026-12-21",
+    "return_date": "2026-12-25",
+    "nights": 4,
+    "is_representative": true,
+    "price_krw": 359000,
+    "airline_code": "VJ",
+    "airlines": [
+     "비엣젯항공"
+    ],
+    "stops": 0,
+    "duration_minutes": 295,
+    "depart_time": "18:40",
+    "arrive_time": "21:35",
+    "arrive_date": "2026-12-21",
+    "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMjFqBRIDSUNOcgUSA0RBRBoaEgoyMDI2LTEyLTI1agUSA0RBRHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+    "insight": {
+     "google_code": 1,
+     "current_price_krw": 359000,
+     "usual_price_krw": 430100,
+     "typical_low_krw": 365000,
+     "typical_high_krw": 560000,
+     "level": "low",
+     "history_min_krw": 395100,
+     "history_p10_krw": 406200,
+     "history_count": 61,
+     "history": [
+      {
+       "date": "2026-09-18",
+       "price_krw": 480200
+      },
+      {
+       "date": "2026-09-19",
+       "price_krw": 467000
+      },
+      {
+       "date": "2026-09-20",
+       "price_krw": 479500
+      },
+      {
+       "date": "2026-09-21",
+       "price_krw": 479200
+      },
+      {
+       "date": "2026-09-22",
+       "price_krw": 473700
+      },
+      {
+       "date": "2026-09-23",
+       "price_krw": 457400
+      },
+      {
+       "date": "2026-09-24",
+       "price_krw": 476600
+      },
+      {
+       "date": "2026-09-25",
+       "price_krw": 476600
+      },
+      {
+       "date": "2026-09-26",
+       "price_krw": 467300
+      },
+      {
+       "date": "2026-09-27",
+       "price_krw": 452600
+      },
+      {
+       "date": "2026-09-28",
+       "price_krw": 472200
+      },
+      {
+       "date": "2026-09-29",
+       "price_krw": 468200
+      },
+      {
+       "date": "2026-09-30",
+       "price_krw": 464800
+      },
+      {
+       "date": "2026-10-01",
+       "price_krw": 459100
+      },
+      {
+       "date": "2026-10-02",
+       "price_krw": 455700
+      },
+      {
+       "date": "2026-10-03",
+       "price_krw": 454500
+      },
+      {
+       "date": "2026-10-04",
+       "price_krw": 443900
+      },
+      {
+       "date": "2026-10-05",
+       "price_krw": 461200
+      },
+      {
+       "date": "2026-10-06",
+       "price_krw": 446200
+      },
+      {
+       "date": "2026-10-07",
+       "price_krw": 455200
+      },
+      {
+       "date": "2026-10-08",
+       "price_krw": 438900
+      },
+      {
+       "date": "2026-10-09",
+       "price_krw": 452100
+      },
+      {
+       "date": "2026-10-10",
+       "price_krw": 450400
+      },
+      {
+       "date": "2026-10-11",
+       "price_krw": 443300
+      },
+      {
+       "date": "2026-10-12",
+       "price_krw": 451400
+      },
+      {
+       "date": "2026-10-13",
+       "price_krw": 445300
+      },
+      {
+       "date": "2026-10-14",
+       "price_krw": 439900
+      },
+      {
+       "date": "2026-10-15",
+       "price_krw": 432100
+      },
+      {
+       "date": "2026-10-16",
+       "price_krw": 432400
+      },
+      {
+       "date": "2026-10-17",
+       "price_krw": 428800
+      },
+      {
+       "date": "2026-10-18",
+       "price_krw": 434600
+      },
+      {
+       "date": "2026-10-19",
+       "price_krw": 443800
+      },
+      {
+       "date": "2026-10-20",
+       "price_krw": 429600
+      },
+      {
+       "date": "2026-10-21",
+       "price_krw": 426200
+      },
+      {
+       "date": "2026-10-22",
+       "price_krw": 432700
+      },
+      {
+       "date": "2026-10-23",
+       "price_krw": 421200
+      },
+      {
+       "date": "2026-10-24",
+       "price_krw": 426600
+      },
+      {
+       "date": "2026-10-25",
+       "price_krw": 425600
+      },
+      {
+       "date": "2026-10-26",
+       "price_krw": 432700
+      },
+      {
+       "date": "2026-10-27",
+       "price_krw": 427400
+      },
+      {
+       "date": "2026-10-28",
+       "price_krw": 420900
+      },
+      {
+       "date": "2026-10-29",
+       "price_krw": 413600
+      },
+      {
+       "date": "2026-10-30",
+       "price_krw": 421800
+      },
+      {
+       "date": "2026-10-31",
+       "price_krw": 425900
+      },
+      {
+       "date": "2026-11-01",
+       "price_krw": 412600
+      },
+      {
+       "date": "2026-11-02",
+       "price_krw": 426400
+      },
+      {
+       "date": "2026-11-03",
+       "price_krw": 413000
+      },
+      {
+       "date": "2026-11-04",
+       "price_krw": 417000
+      },
+      {
+       "date": "2026-11-05",
+       "price_krw": 412600
+      },
+      {
+       "date": "2026-11-06",
+       "price_krw": 412900
+      },
+      {
+       "date": "2026-11-07",
+       "price_krw": 408500
+      },
+      {
+       "date": "2026-11-08",
+       "price_krw": 406000
+      },
+      {
+       "date": "2026-11-09",
+       "price_krw": 415400
+      },
+      {
+       "date": "2026-11-10",
+       "price_krw": 416300
+      },
+      {
+       "date": "2026-11-11",
+       "price_krw": 416600
+      },
+      {
+       "date": "2026-11-12",
+       "price_krw": 399100
+      },
+      {
+       "date": "2026-11-13",
+       "price_krw": 406200
+      },
+      {
+       "date": "2026-11-14",
+       "price_krw": 396000
+      },
+      {
+       "date": "2026-11-15",
+       "price_krw": 395100
+      },
+      {
+       "date": "2026-11-16",
+       "price_krw": 397800
+      },
+      {
+       "date": "2026-11-17",
+       "price_krw": 359000
+      }
+     ]
+    },
+    "judgement": {
+     "evaluated": [
+      "google_low",
+      "offseason",
+      "own_history",
+      "google_60d"
+     ],
+     "matched": [
+      "google_low",
+      "own_history",
+      "google_60d"
+     ],
+     "matched_count": 3,
+     "is_deal": true,
+     "baseline_price_krw": 299700,
+     "pct_vs_baseline": 19.8,
+     "own_median_krw": 424100,
+     "own_samples": 38,
+     "pct_vs_own_median": -15.4,
+     "pct_vs_typical_low": -1.6,
+     "pct_vs_60d_min": -9.1
+    },
+    "collected_at": "2026-11-17T21:39:11+09:00"
+   },
+   "current_fare": null,
+   "current_checked_at": "2026-11-19T09:24:11+09:00",
+   "notification": {
+    "channel": "telegram",
+    "sent": true,
+    "sent_at": "2026-11-17T22:33:13+09:00",
+    "attempts": 1,
+    "error": null
+   },
+   "hotels": {
+    "source": "serpapi",
+    "query": "다낭 호텔",
+    "check_in": "2026-12-21",
+    "check_out": "2026-12-25",
+    "nights": 4,
+    "fetched_at": "2026-11-17T22:32:11+09:00",
+    "links": {
+     "google_hotels": "https://www.google.com/travel/search?q=%EB%8B%A4%EB%82%AD+%ED%98%B8%ED%85%94&checkin=2026-12-21&checkout=2026-12-25&hl=ko&gl=kr&curr=KRW",
+     "agoda": "https://www.agoda.com/ko-kr/search?textToSearch=%EB%8B%A4%EB%82%AD+%ED%98%B8%ED%85%94&checkIn=2026-12-21&los=4&rooms=1&adults=1&currency=KRW"
+    },
+    "items": [
+     {
+      "name": "사노우바 다낭 호텔",
+      "rate_per_night_krw": 41200,
+      "total_rate_krw": 164800,
+      "rating": 4.3,
+      "deal": null,
+      "link": "https://www.google.com/travel/search?q=%EC%82%AC%EB%85%B8%EC%9A%B0%EB%B0%94+%EB%8B%A4%EB%82%AD+%ED%98%B8%ED%85%94&checkin=2026-12-21&checkout=2026-12-25&hl=ko&gl=kr&curr=KRW"
+     },
+     {
+      "name": "한 리버 뷰 호텔 다낭",
+      "rate_per_night_krw": 44800,
+      "total_rate_krw": 179200,
+      "rating": 4.1,
+      "deal": null,
+      "link": "https://www.google.com/travel/search?q=%ED%95%9C+%EB%A6%AC%EB%B2%84+%EB%B7%B0+%ED%98%B8%ED%85%94+%EB%8B%A4%EB%82%AD&checkin=2026-12-21&checkout=2026-12-25&hl=ko&gl=kr&curr=KRW"
+     },
+     {
+      "name": "치 부티크 호텔 미케",
+      "rate_per_night_krw": 52300,
+      "total_rate_krw": 209200,
+      "rating": 4.4,
+      "deal": null,
+      "link": "https://www.google.com/travel/search?q=%EC%B9%98+%EB%B6%80%ED%8B%B0%ED%81%AC+%ED%98%B8%ED%85%94+%EB%AF%B8%EC%BC%80&checkin=2026-12-21&checkout=2026-12-25&hl=ko&gl=kr&curr=KRW"
+     },
+     {
+      "name": "멜리아 빈펄 다낭 리버프런트",
+      "rate_per_night_krw": 96500,
+      "total_rate_krw": 386000,
+      "rating": 4.6,
+      "deal": null,
+      "link": "https://www.google.com/travel/search?q=%EB%A9%9C%EB%A6%AC%EC%95%84+%EB%B9%88%ED%8E%84+%EB%8B%A4%EB%82%AD+%EB%A6%AC%EB%B2%84%ED%94%84%EB%9F%B0%ED%8A%B8&checkin=2026-12-21&checkout=2026-12-25&hl=ko&gl=kr&curr=KRW"
+     },
+     {
+      "name": "풀만 다낭 비치 리조트",
+      "rate_per_night_krw": 214000,
+      "total_rate_krw": 856000,
+      "rating": 4.7,
+      "deal": null,
+      "link": "https://www.google.com/travel/search?q=%ED%92%80%EB%A7%8C+%EB%8B%A4%EB%82%AD+%EB%B9%84%EC%B9%98+%EB%A6%AC%EC%A1%B0%ED%8A%B8&checkin=2026-12-21&checkout=2026-12-25&hl=ko&gl=kr&curr=KRW"
+     }
+    ]
+   }
+  },
+  {
+   "id": "TPE-20261112T080211",
+   "origin": "ICN",
+   "destination": "TPE",
+   "city_ko": "타이베이(타오위안)",
+   "country_ko": "대만",
+   "region": "중화권",
+   "status": "ended",
+   "kind": "new",
+   "created_at": "2026-11-12T09:26:11+09:00",
+   "ended_at": "2026-11-13T22:35:11+09:00",
+   "alerted_price_krw": 298000,
+   "previous_alerted_price_krw": null,
+   "fare": {
+    "origin": "ICN",
+    "destination": "TPE",
+    "city_ko": "타이베이(타오위안)",
+    "country_ko": "대만",
+    "region": "중화권",
+    "depart_date": "2026-12-21",
+    "return_date": "2026-12-25",
+    "nights": 4,
+    "is_representative": true,
+    "price_krw": 298000,
+    "airline_code": "7C",
+    "airlines": [
+     "제주항공"
+    ],
+    "stops": 0,
+    "duration_minutes": 165,
+    "depart_time": "11:30",
+    "arrive_time": "13:15",
+    "arrive_date": "2026-12-21",
+    "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMTItMjFqBRIDSUNOcgUSA1RQRRoaEgoyMDI2LTEyLTI1agUSA1RQRXIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+    "insight": {
+     "google_code": 1,
+     "current_price_krw": 298000,
+     "usual_price_krw": 362700,
+     "typical_low_krw": 310000,
+     "typical_high_krw": 470000,
+     "level": "low",
+     "history_min_krw": 269400,
+     "history_p10_krw": 275900,
+     "history_count": 61,
+     "history": [
+      {
+       "date": "2026-09-13",
+       "price_krw": 327000
+      },
+      {
+       "date": "2026-09-14",
+       "price_krw": 286200
+      },
+      {
+       "date": "2026-09-15",
+       "price_krw": 295900
+      },
+      {
+       "date": "2026-09-16",
+       "price_krw": 275900
+      },
+      {
+       "date": "2026-09-17",
+       "price_krw": 303200
+      },
+      {
+       "date": "2026-09-18",
+       "price_krw": 308100
+      },
+      {
+       "date": "2026-09-19",
+       "price_krw": 318700
+      },
+      {
+       "date": "2026-09-20",
+       "price_krw": 274400
+      },
+      {
+       "date": "2026-09-21",
+       "price_krw": 336000
+      },
+      {
+       "date": "2026-09-22",
+       "price_krw": 270700
+      },
+      {
+       "date": "2026-09-23",
+       "price_krw": 277400
+      },
+      {
+       "date": "2026-09-24",
+       "price_krw": 307000
+      },
+      {
+       "date": "2026-09-25",
+       "price_krw": 329900
+      },
+      {
+       "date": "2026-09-26",
+       "price_krw": 278300
+      },
+      {
+       "date": "2026-09-27",
+       "price_krw": 282500
+      },
+      {
+       "date": "2026-09-28",
+       "price_krw": 287600
+      },
+      {
+       "date": "2026-09-29",
+       "price_krw": 272400
+      },
+      {
+       "date": "2026-09-30",
+       "price_krw": 275400
+      },
+      {
+       "date": "2026-10-01",
+       "price_krw": 325600
+      },
+      {
+       "date": "2026-10-02",
+       "price_krw": 331000
+      },
+      {
+       "date": "2026-10-03",
+       "price_krw": 321900
+      },
+      {
+       "date": "2026-10-04",
+       "price_krw": 317700
+      },
+      {
+       "date": "2026-10-05",
+       "price_krw": 276300
+      },
+      {
+       "date": "2026-10-06",
+       "price_krw": 321100
+      },
+      {
+       "date": "2026-10-07",
+       "price_krw": 314200
+      },
+      {
+       "date": "2026-10-08",
+       "price_krw": 325800
+      },
+      {
+       "date": "2026-10-09",
+       "price_krw": 297900
+      },
+      {
+       "date": "2026-10-10",
+       "price_krw": 329100
+      },
+      {
+       "date": "2026-10-11",
+       "price_krw": 301000
+      },
+      {
+       "date": "2026-10-12",
+       "price_krw": 338700
+      },
+      {
+       "date": "2026-10-13",
+       "price_krw": 311500
+      },
+      {
+       "date": "2026-10-14",
+       "price_krw": 308800
+      },
+      {
+       "date": "2026-10-15",
+       "price_krw": 280000
+      },
+      {
+       "date": "2026-10-16",
+       "price_krw": 309500
+      },
+      {
+       "date": "2026-10-17",
+       "price_krw": 336700
+      },
+      {
+       "date": "2026-10-18",
+       "price_krw": 342100
+      },
+      {
+       "date": "2026-10-19",
+       "price_krw": 316700
+      },
+      {
+       "date": "2026-10-20",
+       "price_krw": 312300
+      },
+      {
+       "date": "2026-10-21",
+       "price_krw": 326400
+      },
+      {
+       "date": "2026-10-22",
+       "price_krw": 301500
+      },
+      {
+       "date": "2026-10-23",
+       "price_krw": 302900
+      },
+      {
+       "date": "2026-10-24",
+       "price_krw": 284300
+      },
+      {
+       "date": "2026-10-25",
+       "price_krw": 335500
+      },
+      {
+       "date": "2026-10-26",
+       "price_krw": 321200
+      },
+      {
+       "date": "2026-10-27",
+       "price_krw": 277500
+      },
+      {
+       "date": "2026-10-28",
+       "price_krw": 315900
+      },
+      {
+       "date": "2026-10-29",
+       "price_krw": 310800
+      },
+      {
+       "date": "2026-10-30",
+       "price_krw": 328100
+      },
+      {
+       "date": "2026-10-31",
+       "price_krw": 285900
+      },
+      {
+       "date": "2026-11-01",
+       "price_krw": 281700
+      },
+      {
+       "date": "2026-11-02",
+       "price_krw": 341100
+      },
+      {
+       "date": "2026-11-03",
+       "price_krw": 306600
+      },
+      {
+       "date": "2026-11-04",
+       "price_krw": 311600
+      },
+      {
+       "date": "2026-11-05",
+       "price_krw": 303500
+      },
+      {
+       "date": "2026-11-06",
+       "price_krw": 269400
+      },
+      {
+       "date": "2026-11-07",
+       "price_krw": 298700
+      },
+      {
+       "date": "2026-11-08",
+       "price_krw": 322400
+      },
+      {
+       "date": "2026-11-09",
+       "price_krw": 292500
+      },
+      {
+       "date": "2026-11-10",
+       "price_krw": 331000
+      },
+      {
+       "date": "2026-11-11",
+       "price_krw": 302200
+      },
+      {
+       "date": "2026-11-12",
+       "price_krw": 298000
+      }
+     ]
+    },
+    "judgement": {
+     "evaluated": [
+      "google_low",
+      "offseason",
+      "own_history",
+      "google_60d"
+     ],
+     "matched": [
+      "google_low",
+      "offseason",
+      "own_history"
+     ],
+     "matched_count": 3,
+     "is_deal": true,
+     "baseline_price_krw": 301000,
+     "pct_vs_baseline": -1.0,
+     "own_median_krw": 369700,
+     "own_samples": 21,
+     "pct_vs_own_median": -19.4,
+     "pct_vs_typical_low": -3.9,
+     "pct_vs_60d_min": 10.6
+    },
+    "collected_at": "2026-11-12T08:20:11+09:00"
+   },
+   "current_fare": null,
+   "current_checked_at": "2026-11-13T22:35:11+09:00",
+   "notification": {
+    "channel": "telegram",
+    "sent": true,
+    "sent_at": "2026-11-12T09:26:13+09:00",
+    "attempts": 1,
+    "error": null
+   },
+   "hotels": {
+    "source": "links",
+    "query": "타이베이 호텔",
+    "check_in": "2026-12-21",
+    "check_out": "2026-12-25",
+    "nights": 4,
+    "fetched_at": null,
+    "links": {
+     "google_hotels": "https://www.google.com/travel/search?q=%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4+%ED%98%B8%ED%85%94&checkin=2026-12-21&checkout=2026-12-25&hl=ko&gl=kr&curr=KRW",
+     "agoda": "https://www.agoda.com/ko-kr/search?textToSearch=%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4+%ED%98%B8%ED%85%94&checkIn=2026-12-21&los=4&rooms=1&adults=1&currency=KRW"
+    },
+    "items": []
+   }
+  }
+ ]
+}

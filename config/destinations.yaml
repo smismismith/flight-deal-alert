@@ -1,0 +1,80 @@
+# 조회 대상 목적지. code 는 도착 공항 IATA 코드이며 목록 안에서 중복되지 않는다.
+# origin: 출발 공항(ICN 또는 GMP). 국내는 GMP->CJU 만 조회한다.
+# region: 국내 | 일본 | 중화권 | 동남아 | 대양주 | 유럽 | 미주 | 기타
+# hotel_query: 호텔 검색어(SerpApi q, Google Hotels·아고다 검색 링크에 사용)
+destinations:
+  # 국내
+  - { code: CJU, origin: GMP, city_ko: 제주, country_ko: 대한민국, region: 국내, hotel_query: "제주도 호텔" }
+
+  # 일본
+  - { code: NRT, origin: ICN, city_ko: 도쿄(나리타), country_ko: 일본, region: 일본, hotel_query: "도쿄 호텔" }
+  - { code: HND, origin: GMP, city_ko: 도쿄(하네다), country_ko: 일본, region: 일본, hotel_query: "도쿄 호텔" }
+  - { code: KIX, origin: ICN, city_ko: 오사카, country_ko: 일본, region: 일본, hotel_query: "오사카 호텔" }
+  - { code: FUK, origin: ICN, city_ko: 후쿠오카, country_ko: 일본, region: 일본, hotel_query: "후쿠오카 호텔" }
+  - { code: CTS, origin: ICN, city_ko: 삿포로, country_ko: 일본, region: 일본, hotel_query: "삿포로 호텔" }
+  - { code: OKA, origin: ICN, city_ko: 오키나와, country_ko: 일본, region: 일본, hotel_query: "오키나와 나하 호텔" }
+  - { code: NGO, origin: ICN, city_ko: 나고야, country_ko: 일본, region: 일본, hotel_query: "나고야 호텔" }
+  - { code: MYJ, origin: ICN, city_ko: 마쓰야마, country_ko: 일본, region: 일본, hotel_query: "마쓰야마 호텔" }
+
+  # 중화권
+  - { code: TPE, origin: ICN, city_ko: 타이베이(타오위안), country_ko: 대만, region: 중화권, hotel_query: "타이베이 호텔" }
+  - { code: TSA, origin: GMP, city_ko: 타이베이(쑹산), country_ko: 대만, region: 중화권, hotel_query: "타이베이 호텔" }
+  - { code: KHH, origin: ICN, city_ko: 가오슝, country_ko: 대만, region: 중화권, hotel_query: "가오슝 호텔" }
+  - { code: HKG, origin: ICN, city_ko: 홍콩, country_ko: 홍콩, region: 중화권, hotel_query: "홍콩 호텔" }
+  - { code: MFM, origin: ICN, city_ko: 마카오, country_ko: 마카오, region: 중화권, hotel_query: "마카오 호텔" }
+  - { code: PVG, origin: ICN, city_ko: 상하이(푸둥), country_ko: 중국, region: 중화권, hotel_query: "상하이 호텔" }
+  - { code: SHA, origin: GMP, city_ko: 상하이(훙차오), country_ko: 중국, region: 중화권, hotel_query: "상하이 호텔" }
+  - { code: PEK, origin: ICN, city_ko: 베이징, country_ko: 중국, region: 중화권, hotel_query: "베이징 호텔" }
+  - { code: TAO, origin: ICN, city_ko: 칭다오, country_ko: 중국, region: 중화권, hotel_query: "칭다오 호텔" }
+
+  # 동남아
+  - { code: BKK, origin: ICN, city_ko: 방콕, country_ko: 태국, region: 동남아, hotel_query: "방콕 호텔" }
+  - { code: CNX, origin: ICN, city_ko: 치앙마이, country_ko: 태국, region: 동남아, hotel_query: "치앙마이 호텔" }
+  - { code: HKT, origin: ICN, city_ko: 푸껫, country_ko: 태국, region: 동남아, hotel_query: "푸껫 호텔" }
+  - { code: SGN, origin: ICN, city_ko: 호찌민, country_ko: 베트남, region: 동남아, hotel_query: "호찌민 호텔" }
+  - { code: HAN, origin: ICN, city_ko: 하노이, country_ko: 베트남, region: 동남아, hotel_query: "하노이 호텔" }
+  - { code: DAD, origin: ICN, city_ko: 다낭, country_ko: 베트남, region: 동남아, hotel_query: "다낭 호텔" }
+  - { code: CXR, origin: ICN, city_ko: 나트랑, country_ko: 베트남, region: 동남아, hotel_query: "나트랑 호텔" }
+  - { code: PQC, origin: ICN, city_ko: 푸꾸옥, country_ko: 베트남, region: 동남아, hotel_query: "푸꾸옥 호텔" }
+  - { code: MNL, origin: ICN, city_ko: 마닐라, country_ko: 필리핀, region: 동남아, hotel_query: "마닐라 호텔" }
+  - { code: CEB, origin: ICN, city_ko: 세부, country_ko: 필리핀, region: 동남아, hotel_query: "세부 호텔" }
+  - { code: KLO, origin: ICN, city_ko: 보라카이(칼리보), country_ko: 필리핀, region: 동남아, hotel_query: "보라카이 호텔" }
+  - { code: TAG, origin: ICN, city_ko: 보홀, country_ko: 필리핀, region: 동남아, hotel_query: "보홀 팡라오 호텔" }
+  - { code: SIN, origin: ICN, city_ko: 싱가포르, country_ko: 싱가포르, region: 동남아, hotel_query: "싱가포르 호텔" }
+  - { code: KUL, origin: ICN, city_ko: 쿠알라룸푸르, country_ko: 말레이시아, region: 동남아, hotel_query: "쿠알라룸푸르 호텔" }
+  - { code: BKI, origin: ICN, city_ko: 코타키나발루, country_ko: 말레이시아, region: 동남아, hotel_query: "코타키나발루 호텔" }
+  - { code: DPS, origin: ICN, city_ko: 발리, country_ko: 인도네시아, region: 동남아, hotel_query: "발리 호텔" }
+  - { code: CGK, origin: ICN, city_ko: 자카르타, country_ko: 인도네시아, region: 동남아, hotel_query: "자카르타 호텔" }
+  - { code: VTE, origin: ICN, city_ko: 비엔티안, country_ko: 라오스, region: 동남아, hotel_query: "비엔티안 호텔" }
+
+  # 대양주
+  - { code: GUM, origin: ICN, city_ko: 괌, country_ko: 미국(괌), region: 대양주, hotel_query: "괌 투몬 호텔" }
+  - { code: SPN, origin: ICN, city_ko: 사이판, country_ko: 미국(북마리아나 제도), region: 대양주, hotel_query: "사이판 호텔" }
+  - { code: SYD, origin: ICN, city_ko: 시드니, country_ko: 호주, region: 대양주, hotel_query: "시드니 호텔" }
+  - { code: AKL, origin: ICN, city_ko: 오클랜드, country_ko: 뉴질랜드, region: 대양주, hotel_query: "오클랜드 호텔" }
+
+  # 유럽
+  - { code: CDG, origin: ICN, city_ko: 파리, country_ko: 프랑스, region: 유럽, hotel_query: "파리 호텔" }
+  - { code: LHR, origin: ICN, city_ko: 런던, country_ko: 영국, region: 유럽, hotel_query: "런던 호텔" }
+  - { code: FCO, origin: ICN, city_ko: 로마, country_ko: 이탈리아, region: 유럽, hotel_query: "로마 호텔" }
+  - { code: BCN, origin: ICN, city_ko: 바르셀로나, country_ko: 스페인, region: 유럽, hotel_query: "바르셀로나 호텔" }
+  - { code: FRA, origin: ICN, city_ko: 프랑크푸르트, country_ko: 독일, region: 유럽, hotel_query: "프랑크푸르트 호텔" }
+  - { code: AMS, origin: ICN, city_ko: 암스테르담, country_ko: 네덜란드, region: 유럽, hotel_query: "암스테르담 호텔" }
+  - { code: PRG, origin: ICN, city_ko: 프라하, country_ko: 체코, region: 유럽, hotel_query: "프라하 호텔" }
+  - { code: VIE, origin: ICN, city_ko: 빈, country_ko: 오스트리아, region: 유럽, hotel_query: "빈 호텔" }
+  - { code: IST, origin: ICN, city_ko: 이스탄불, country_ko: 튀르키예, region: 유럽, hotel_query: "이스탄불 호텔" }
+
+  # 미주
+  - { code: LAX, origin: ICN, city_ko: 로스앤젤레스, country_ko: 미국, region: 미주, hotel_query: "로스앤젤레스 호텔" }
+  - { code: SFO, origin: ICN, city_ko: 샌프란시스코, country_ko: 미국, region: 미주, hotel_query: "샌프란시스코 호텔" }
+  - { code: SEA, origin: ICN, city_ko: 시애틀, country_ko: 미국, region: 미주, hotel_query: "시애틀 호텔" }
+  - { code: JFK, origin: ICN, city_ko: 뉴욕, country_ko: 미국, region: 미주, hotel_query: "뉴욕 맨해튼 호텔" }
+  - { code: HNL, origin: ICN, city_ko: 호놀룰루, country_ko: 미국(하와이), region: 미주, hotel_query: "호놀룰루 와이키키 호텔" }
+  - { code: YVR, origin: ICN, city_ko: 밴쿠버, country_ko: 캐나다, region: 미주, hotel_query: "밴쿠버 호텔" }
+
+  # 기타
+  - { code: UBN, origin: ICN, city_ko: 울란바토르, country_ko: 몽골, region: 기타, hotel_query: "울란바토르 호텔" }
+  - { code: DXB, origin: ICN, city_ko: 두바이, country_ko: 아랍에미리트, region: 기타, hotel_query: "두바이 호텔" }
+  - { code: DEL, origin: ICN, city_ko: 델리, country_ko: 인도, region: 기타, hotel_query: "뉴델리 호텔" }
+  - { code: ALA, origin: ICN, city_ko: 알마티, country_ko: 카자흐스탄, region: 기타, hotel_query: "알마티 호텔" }
+  - { code: MLE, origin: ICN, city_ko: 몰디브(말레), country_ko: 몰디브, region: 기타, hotel_query: "몰디브 리조트" }

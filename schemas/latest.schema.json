@@ -1,0 +1,625 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://flight-deal-alert.local/schemas/latest.schema.json",
+  "title": "data/latest.json",
+  "description": "목적지별 현재 최저가와 날짜 조합별 가격.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "generated_at",
+    "run_id",
+    "trip",
+    "destinations"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "generated_at": {
+      "$ref": "#/$defs/iso_kst"
+    },
+    "run_id": {
+      "$ref": "#/$defs/run_id"
+    },
+    "trip": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "adults",
+        "depart_from",
+        "depart_to",
+        "return_by",
+        "nights_min",
+        "nights_max"
+      ],
+      "properties": {
+        "adults": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "depart_from": {
+          "$ref": "#/$defs/date"
+        },
+        "depart_to": {
+          "$ref": "#/$defs/date"
+        },
+        "return_by": {
+          "$ref": "#/$defs/date"
+        },
+        "nights_min": {
+          "type": "integer"
+        },
+        "nights_max": {
+          "type": "integer"
+        }
+      }
+    },
+    "destinations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "origin",
+          "destination",
+          "city_ko",
+          "country_ko",
+          "region",
+          "is_domestic",
+          "expanded",
+          "stale",
+          "last_success_at",
+          "best",
+          "deal",
+          "combos"
+        ],
+        "properties": {
+          "origin": {
+            "$ref": "#/$defs/iata"
+          },
+          "destination": {
+            "$ref": "#/$defs/iata"
+          },
+          "city_ko": {
+            "type": "string",
+            "minLength": 1
+          },
+          "country_ko": {
+            "type": "string",
+            "minLength": 1
+          },
+          "region": {
+            "$ref": "#/$defs/region"
+          },
+          "is_domestic": {
+            "type": "boolean"
+          },
+          "expanded": {
+            "type": "boolean",
+            "description": "이번 실행에서 전체 조합으로 확대 조회했는지"
+          },
+          "stale": {
+            "type": "boolean",
+            "description": "이번 실행의 조회 대상이었으나 가격을 1건도 얻지 못해(조회 실패·결과 없음·상한이나 중단으로 미조회) 이전 실행 값을 유지한 경우 true. 조회 대상이 아니었던 목적지는 이전 항목을 변경하지 않는다. 이전 값이 없고 조회에 실패한 경우에도 true(best=null)"
+          },
+          "last_success_at": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/iso_kst"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "best": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/fare",
+                "description": "필터 통과 항공편 중 최저가 기록. 가격이 없으면 null"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "deal": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/fare",
+                "description": "is_deal=true 인 기록 중 최저가. 없으면 null"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "combos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/combo"
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "combo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "depart_date",
+        "return_date",
+        "nights",
+        "is_representative",
+        "price_krw",
+        "airlines",
+        "stops",
+        "level",
+        "matched",
+        "is_deal",
+        "search_url",
+        "collected_at"
+      ],
+      "properties": {
+        "depart_date": {
+          "$ref": "#/$defs/date"
+        },
+        "return_date": {
+          "$ref": "#/$defs/date"
+        },
+        "nights": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "is_representative": {
+          "type": "boolean"
+        },
+        "price_krw": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "원(KRW), 성인 1인 왕복 총액"
+        },
+        "airlines": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "stops": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "level": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/level"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "matched": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/criterion"
+          },
+          "uniqueItems": true
+        },
+        "is_deal": {
+          "type": "boolean"
+        },
+        "search_url": {
+          "type": "string",
+          "pattern": "^https://"
+        },
+        "collected_at": {
+          "$ref": "#/$defs/iso_kst"
+        }
+      },
+      "description": "출발일x박수 조합별 최저가(히트맵용 축약 기록)"
+    },
+    "criterion": {
+      "enum": [
+        "google_low",
+        "offseason",
+        "own_history",
+        "google_60d"
+      ],
+      "description": "판정 기준 a=google_low, b=offseason, c=own_history, d=google_60d"
+    },
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "fare": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "origin",
+        "destination",
+        "city_ko",
+        "country_ko",
+        "region",
+        "depart_date",
+        "return_date",
+        "nights",
+        "is_representative",
+        "price_krw",
+        "airline_code",
+        "airlines",
+        "stops",
+        "duration_minutes",
+        "depart_time",
+        "arrive_time",
+        "arrive_date",
+        "search_url",
+        "insight",
+        "judgement",
+        "collected_at"
+      ],
+      "properties": {
+        "origin": {
+          "$ref": "#/$defs/iata"
+        },
+        "destination": {
+          "$ref": "#/$defs/iata"
+        },
+        "city_ko": {
+          "type": "string",
+          "minLength": 1
+        },
+        "country_ko": {
+          "type": "string",
+          "minLength": 1
+        },
+        "region": {
+          "$ref": "#/$defs/region"
+        },
+        "depart_date": {
+          "$ref": "#/$defs/date"
+        },
+        "return_date": {
+          "$ref": "#/$defs/date"
+        },
+        "nights": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 30
+        },
+        "is_representative": {
+          "type": "boolean",
+          "description": "대표 조합 6개에 포함되는지"
+        },
+        "price_krw": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "원(KRW), 성인 1인 왕복 총액"
+        },
+        "airline_code": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "airlines": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "가는 편 항공사 이름(한국어)"
+        },
+        "stops": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "duration_minutes": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "description": "가는 편 총 소요 시간(분)"
+        },
+        "depart_time": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "arrive_time": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "arrive_date": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "search_url": {
+          "type": "string",
+          "pattern": "^https://"
+        },
+        "insight": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/insight"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "judgement": {
+          "$ref": "#/$defs/judgement"
+        },
+        "collected_at": {
+          "$ref": "#/$defs/iso_kst"
+        }
+      },
+      "description": "항공권 가격 기록(전체 필드)"
+    },
+    "iata": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "insight": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "google_code",
+        "current_price_krw",
+        "usual_price_krw",
+        "typical_low_krw",
+        "typical_high_krw",
+        "level",
+        "history_min_krw",
+        "history_p10_krw",
+        "history_count",
+        "history"
+      ],
+      "properties": {
+        "google_code": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "payload[5][0] 원본 값. 의미 미확인이므로 판정에 사용하지 않는다"
+        },
+        "current_price_krw": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "description": "원(KRW), 성인 1인 왕복 총액"
+        },
+        "usual_price_krw": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "description": "원(KRW), 성인 1인 왕복 총액"
+        },
+        "typical_low_krw": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "description": "원(KRW), 성인 1인 왕복 총액"
+        },
+        "typical_high_krw": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "description": "원(KRW), 성인 1인 왕복 총액"
+        },
+        "level": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/level",
+              "description": "자체 계산: 가격 < typical_low 이면 low, > typical_high 이면 high, 그 외 typical. 범위 값이 없으면 null"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "history_min_krw": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "description": "원(KRW), 성인 1인 왕복 총액"
+        },
+        "history_p10_krw": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "description": "원(KRW), 성인 1인 왕복 총액"
+        },
+        "history_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "history": {
+          "type": "array",
+          "description": "Google 제공 최근 약 60일 일별 가격(날짜 오름차순)",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "date",
+              "price_krw"
+            ],
+            "properties": {
+              "date": {
+                "$ref": "#/$defs/date"
+              },
+              "price_krw": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "원(KRW), 성인 1인 왕복 총액"
+              }
+            }
+          }
+        }
+      },
+      "description": "Google 가격 정보(payload[5])"
+    },
+    "iso_kst": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\+09:00$",
+      "description": "ISO 8601, KST 고정. 예: 2026-11-19T08:02:11+09:00"
+    },
+    "judgement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evaluated",
+        "matched",
+        "matched_count",
+        "is_deal",
+        "baseline_price_krw",
+        "pct_vs_baseline",
+        "own_median_krw",
+        "own_samples",
+        "pct_vs_own_median",
+        "pct_vs_typical_low",
+        "pct_vs_60d_min"
+      ],
+      "properties": {
+        "evaluated": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/criterion"
+          },
+          "uniqueItems": true,
+          "description": "비교 데이터가 있어 평가한 기준"
+        },
+        "matched": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/criterion"
+          },
+          "uniqueItems": true,
+          "description": "해당한 기준. evaluated 의 부분집합"
+        },
+        "matched_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "is_deal": {
+          "type": "boolean",
+          "description": "matched_count >= judge.min_criteria(2)"
+        },
+        "baseline_price_krw": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "description": "원(KRW), 성인 1인 왕복 총액"
+        },
+        "pct_vs_baseline": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "(가격 - 비교값) / 비교값 * 100, 소수 첫째 자리까지. 음수이면 비교값보다 저렴"
+        },
+        "own_median_krw": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "description": "원(KRW), 성인 1인 왕복 총액"
+        },
+        "own_samples": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "pct_vs_own_median": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "(가격 - 비교값) / 비교값 * 100, 소수 첫째 자리까지. 음수이면 비교값보다 저렴"
+        },
+        "pct_vs_typical_low": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "(가격 - 비교값) / 비교값 * 100, 소수 첫째 자리까지. 음수이면 비교값보다 저렴"
+        },
+        "pct_vs_60d_min": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "(가격 - 비교값) / 비교값 * 100, 소수 첫째 자리까지. 음수이면 비교값보다 저렴"
+        }
+      },
+      "description": "저렴함 판정 결과"
+    },
+    "level": {
+      "enum": [
+        "low",
+        "typical",
+        "high"
+      ]
+    },
+    "region": {
+      "enum": [
+        "국내",
+        "일본",
+        "중화권",
+        "동남아",
+        "대양주",
+        "유럽",
+        "미주",
+        "기타"
+      ]
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^\\d{8}T\\d{6}$",
+      "description": "실행 시작 시각(KST) YYYYMMDDTHHMMSS"
+    },
+    "time": {
+      "type": "string",
+      "pattern": "^\\d{2}:\\d{2}$",
+      "description": "현지 시각 HH:MM"
+    }
+  }
+}

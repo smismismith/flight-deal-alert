@@ -1,0 +1,82 @@
+name: deploy
+
+# 사이트 빌드 후 저장소의 data/ 를 빌드 결과의 ./data/ 로 복사해 GitHub Pages 에 배포한다.
+# collect 워크플로가 GITHUB_TOKEN 으로 푸시한 커밋은 push 트리거를 실행시키지 않으므로
+# workflow_run(collect 완료)으로도 실행한다. collect 는 결과가 failed 여도 data/ 를 커밋하므로
+# 결론(conclusion)과 관계없이 배포한다.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "web/**"
+      - "data/**"
+      - ".github/workflows/deploy.yml"
+  workflow_run:
+    workflows: ["collect"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Install
+        working-directory: web
+        run: npm ci
+
+      - name: Test
+        working-directory: web
+        run: npm test
+
+      - name: Build
+        working-directory: web
+        run: npm run build
+
+      - name: Copy data
+        run: |
+          if [ -d data ]; then
+            rm -rf web/dist/data
+            cp -r data web/dist/data
+          else
+            echo "::warning::data/ 폴더가 없습니다. 사이트는 데이터 읽기 오류 화면을 표시합니다."
+          fi
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

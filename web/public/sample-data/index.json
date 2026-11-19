@@ -1,0 +1,173 @@
+{
+ "schema_version": 1,
+ "generated_at": "2026-11-19T09:24:48+09:00",
+ "run_id": "20261119T080211",
+ "is_sample": true,
+ "destinations": [
+  {
+   "destination": "CJU",
+   "origin": "GMP",
+   "city_ko": "제주",
+   "country_ko": "대한민국",
+   "region": "국내",
+   "is_domestic": true,
+   "best_price_krw": 130800,
+   "is_deal": false,
+   "history_file": "history/CJU.json"
+  },
+  {
+   "destination": "FUK",
+   "origin": "ICN",
+   "city_ko": "후쿠오카",
+   "country_ko": "일본",
+   "region": "일본",
+   "is_domestic": false,
+   "best_price_krw": 219000,
+   "is_deal": true,
+   "history_file": "history/FUK.json"
+  },
+  {
+   "destination": "KIX",
+   "origin": "ICN",
+   "city_ko": "오사카",
+   "country_ko": "일본",
+   "region": "일본",
+   "is_domestic": false,
+   "best_price_krw": 362700,
+   "is_deal": false,
+   "history_file": "history/KIX.json"
+  },
+  {
+   "destination": "NRT",
+   "origin": "ICN",
+   "city_ko": "도쿄(나리타)",
+   "country_ko": "일본",
+   "region": "일본",
+   "is_domestic": false,
+   "best_price_krw": 404400,
+   "is_deal": false,
+   "history_file": "history/NRT.json"
+  },
+  {
+   "destination": "CTS",
+   "origin": "ICN",
+   "city_ko": "삿포로",
+   "country_ko": "일본",
+   "region": "일본",
+   "is_domestic": false,
+   "best_price_krw": 521200,
+   "is_deal": false,
+   "history_file": "history/CTS.json"
+  },
+  {
+   "destination": "TPE",
+   "origin": "ICN",
+   "city_ko": "타이베이(타오위안)",
+   "country_ko": "대만",
+   "region": "중화권",
+   "is_domestic": false,
+   "best_price_krw": 373800,
+   "is_deal": false,
+   "history_file": "history/TPE.json"
+  },
+  {
+   "destination": "HKG",
+   "origin": "ICN",
+   "city_ko": "홍콩",
+   "country_ko": "홍콩",
+   "region": "중화권",
+   "is_domestic": false,
+   "best_price_krw": 427800,
+   "is_deal": false,
+   "history_file": "history/HKG.json"
+  },
+  {
+   "destination": "DAD",
+   "origin": "ICN",
+   "city_ko": "다낭",
+   "country_ko": "베트남",
+   "region": "동남아",
+   "is_domestic": false,
+   "best_price_krw": 338000,
+   "is_deal": true,
+   "history_file": "history/DAD.json"
+  },
+  {
+   "destination": "SGN",
+   "origin": "ICN",
+   "city_ko": "호찌민",
+   "country_ko": "베트남",
+   "region": "동남아",
+   "is_domestic": false,
+   "best_price_krw": 474400,
+   "is_deal": false,
+   "history_file": "history/SGN.json"
+  },
+  {
+   "destination": "CEB",
+   "origin": "ICN",
+   "city_ko": "세부",
+   "country_ko": "필리핀",
+   "region": "동남아",
+   "is_domestic": false,
+   "best_price_krw": 505200,
+   "is_deal": false,
+   "history_file": "history/CEB.json"
+  },
+  {
+   "destination": "BKK",
+   "origin": "ICN",
+   "city_ko": "방콕",
+   "country_ko": "태국",
+   "region": "동남아",
+   "is_domestic": false,
+   "best_price_krw": 554100,
+   "is_deal": false,
+   "history_file": "history/BKK.json"
+  },
+  {
+   "destination": "GUM",
+   "origin": "ICN",
+   "city_ko": "괌",
+   "country_ko": "미국(괌)",
+   "region": "대양주",
+   "is_domestic": false,
+   "best_price_krw": 615500,
+   "is_deal": false,
+   "history_file": "history/GUM.json"
+  },
+  {
+   "destination": "SYD",
+   "origin": "ICN",
+   "city_ko": "시드니",
+   "country_ko": "호주",
+   "region": "대양주",
+   "is_domestic": false,
+   "best_price_krw": 1515700,
+   "is_deal": false,
+   "history_file": "history/SYD.json"
+  },
+  {
+   "destination": "LAX",
+   "origin": "ICN",
+   "city_ko": "로스앤젤레스",
+   "country_ko": "미국",
+   "region": "미주",
+   "is_domestic": false,
+   "best_price_krw": 1714600,
+   "is_deal": false,
+   "history_file": "history/LAX.json"
+  },
+  {
+   "destination": "CDG",
+   "origin": "ICN",
+   "city_ko": "파리",
+   "country_ko": "프랑스",
+   "region": "유럽",
+   "is_domestic": false,
+   "best_price_krw": 1779200,
+   "is_deal": false,
+   "history_file": "history/CDG.json"
+  }
+ ]
+}

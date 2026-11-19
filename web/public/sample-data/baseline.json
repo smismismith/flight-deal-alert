@@ -1,0 +1,1056 @@
+{
+ "schema_version": 1,
+ "updated_at": "2026-11-16T08:48:38+09:00",
+ "entries": [
+  {
+   "origin": "GMP",
+   "destination": "CJU",
+   "nights": 3,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-12",
+   "price_krw": 75000,
+   "airlines": [
+    "에어서울"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDR01QcgUSA0NKVRoaEgoyMDI3LTAzLTEyagUSA0NKVXIFEgNHTVBCAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:40:00+09:00"
+  },
+  {
+   "origin": "GMP",
+   "destination": "CJU",
+   "nights": 4,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-13",
+   "price_krw": 74800,
+   "airlines": [
+    "에어서울"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDR01QcgUSA0NKVRoaEgoyMDI3LTAzLTEzagUSA0NKVXIFEgNHTVBCAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:40:07+09:00"
+  },
+  {
+   "origin": "GMP",
+   "destination": "CJU",
+   "nights": 5,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-14",
+   "price_krw": 75600,
+   "airlines": [
+    "에어서울"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDR01QcgUSA0NKVRoaEgoyMDI3LTAzLTE0agUSA0NKVXIFEgNHTVBCAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:40:14+09:00"
+  },
+  {
+   "origin": "GMP",
+   "destination": "CJU",
+   "nights": 6,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-15",
+   "price_krw": 76900,
+   "airlines": [
+    "에어서울"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDR01QcgUSA0NKVRoaEgoyMDI3LTAzLTE1agUSA0NKVXIFEgNHTVBCAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:40:21+09:00"
+  },
+  {
+   "origin": "GMP",
+   "destination": "CJU",
+   "nights": 7,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-16",
+   "price_krw": 76900,
+   "airlines": [
+    "에어서울"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDR01QcgUSA0NKVRoaEgoyMDI3LTAzLTE2agUSA0NKVXIFEgNHTVBCAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:40:28+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "FUK",
+   "nights": 3,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-12",
+   "price_krw": 224000,
+   "airlines": [
+    "티웨이항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0ZVSxoaEgoyMDI3LTAzLTEyagUSA0ZVS3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:40:35+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "FUK",
+   "nights": 4,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-13",
+   "price_krw": 215500,
+   "airlines": [
+    "티웨이항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0ZVSxoaEgoyMDI3LTAzLTEzagUSA0ZVS3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:40:42+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "FUK",
+   "nights": 5,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-14",
+   "price_krw": 222500,
+   "airlines": [
+    "티웨이항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0ZVSxoaEgoyMDI3LTAzLTE0agUSA0ZVS3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:40:49+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "FUK",
+   "nights": 6,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-15",
+   "price_krw": 223200,
+   "airlines": [
+    "티웨이항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0ZVSxoaEgoyMDI3LTAzLTE1agUSA0ZVS3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:40:56+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "FUK",
+   "nights": 7,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-16",
+   "price_krw": 223800,
+   "airlines": [
+    "티웨이항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0ZVSxoaEgoyMDI3LTAzLTE2agUSA0ZVS3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:41:03+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "KIX",
+   "nights": 3,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-12",
+   "price_krw": 227600,
+   "airlines": [
+    "에어서울"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0tJWBoaEgoyMDI3LTAzLTEyagUSA0tJWHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:41:10+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "KIX",
+   "nights": 4,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-13",
+   "price_krw": 226100,
+   "airlines": [
+    "에어서울"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0tJWBoaEgoyMDI3LTAzLTEzagUSA0tJWHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:41:17+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "KIX",
+   "nights": 5,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-14",
+   "price_krw": 232600,
+   "airlines": [
+    "에어서울"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0tJWBoaEgoyMDI3LTAzLTE0agUSA0tJWHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:41:24+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "KIX",
+   "nights": 6,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-15",
+   "price_krw": 237600,
+   "airlines": [
+    "에어서울"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0tJWBoaEgoyMDI3LTAzLTE1agUSA0tJWHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:41:31+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "KIX",
+   "nights": 7,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-16",
+   "price_krw": 230400,
+   "airlines": [
+    "에어서울"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0tJWBoaEgoyMDI3LTAzLTE2agUSA0tJWHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:41:38+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "NRT",
+   "nights": 3,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-12",
+   "price_krw": 263200,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA05SVBoaEgoyMDI3LTAzLTEyagUSA05SVHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:41:45+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "NRT",
+   "nights": 4,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-13",
+   "price_krw": 262000,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA05SVBoaEgoyMDI3LTAzLTEzagUSA05SVHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:41:52+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "NRT",
+   "nights": 5,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-14",
+   "price_krw": 268400,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA05SVBoaEgoyMDI3LTAzLTE0agUSA05SVHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:41:59+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "NRT",
+   "nights": 6,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-15",
+   "price_krw": 271600,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA05SVBoaEgoyMDI3LTAzLTE1agUSA05SVHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:42:06+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "NRT",
+   "nights": 7,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-16",
+   "price_krw": 265000,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA05SVBoaEgoyMDI3LTAzLTE2agUSA05SVHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:42:13+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "CTS",
+   "nights": 3,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-12",
+   "price_krw": 317000,
+   "airlines": [
+    "진에어"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0NUUxoaEgoyMDI3LTAzLTEyagUSA0NUU3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:42:20+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "CTS",
+   "nights": 4,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-13",
+   "price_krw": 319400,
+   "airlines": [
+    "진에어"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0NUUxoaEgoyMDI3LTAzLTEzagUSA0NUU3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:42:27+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "CTS",
+   "nights": 5,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-14",
+   "price_krw": 326900,
+   "airlines": [
+    "진에어"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0NUUxoaEgoyMDI3LTAzLTE0agUSA0NUU3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:42:34+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "CTS",
+   "nights": 6,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-15",
+   "price_krw": 325900,
+   "airlines": [
+    "진에어"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0NUUxoaEgoyMDI3LTAzLTE1agUSA0NUU3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:42:41+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "CTS",
+   "nights": 7,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-16",
+   "price_krw": 324900,
+   "airlines": [
+    "진에어"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0NUUxoaEgoyMDI3LTAzLTE2agUSA0NUU3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:42:48+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "TPE",
+   "nights": 3,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-12",
+   "price_krw": 304300,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA1RQRRoaEgoyMDI3LTAzLTEyagUSA1RQRXIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:42:55+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "TPE",
+   "nights": 4,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-13",
+   "price_krw": 301000,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA1RQRRoaEgoyMDI3LTAzLTEzagUSA1RQRXIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:43:02+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "TPE",
+   "nights": 5,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-14",
+   "price_krw": 302200,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA1RQRRoaEgoyMDI3LTAzLTE0agUSA1RQRXIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:43:09+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "TPE",
+   "nights": 6,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-15",
+   "price_krw": 311900,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA1RQRRoaEgoyMDI3LTAzLTE1agUSA1RQRXIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:43:16+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "TPE",
+   "nights": 7,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-16",
+   "price_krw": 305900,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA1RQRRoaEgoyMDI3LTAzLTE2agUSA1RQRXIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:43:23+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "HKG",
+   "nights": 3,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-12",
+   "price_krw": 288100,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0hLRxoaEgoyMDI3LTAzLTEyagUSA0hLR3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:43:30+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "HKG",
+   "nights": 4,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-13",
+   "price_krw": 285400,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0hLRxoaEgoyMDI3LTAzLTEzagUSA0hLR3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:43:37+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "HKG",
+   "nights": 5,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-14",
+   "price_krw": 289700,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0hLRxoaEgoyMDI3LTAzLTE0agUSA0hLR3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:43:44+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "HKG",
+   "nights": 6,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-15",
+   "price_krw": 299100,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0hLRxoaEgoyMDI3LTAzLTE1agUSA0hLR3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:43:51+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "HKG",
+   "nights": 7,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-16",
+   "price_krw": 296200,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0hLRxoaEgoyMDI3LTAzLTE2agUSA0hLR3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:43:58+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "DAD",
+   "nights": 3,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-12",
+   "price_krw": 299000,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0RBRBoaEgoyMDI3LTAzLTEyagUSA0RBRHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:44:05+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "DAD",
+   "nights": 4,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-13",
+   "price_krw": 299700,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0RBRBoaEgoyMDI3LTAzLTEzagUSA0RBRHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:44:12+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "DAD",
+   "nights": 5,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-14",
+   "price_krw": 306600,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0RBRBoaEgoyMDI3LTAzLTE0agUSA0RBRHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:44:19+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "DAD",
+   "nights": 6,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-15",
+   "price_krw": 311600,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0RBRBoaEgoyMDI3LTAzLTE1agUSA0RBRHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:44:26+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "DAD",
+   "nights": 7,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-16",
+   "price_krw": 310800,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0RBRBoaEgoyMDI3LTAzLTE2agUSA0RBRHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:44:33+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "SGN",
+   "nights": 3,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-12",
+   "price_krw": 342200,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA1NHThoaEgoyMDI3LTAzLTEyagUSA1NHTnIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:44:40+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "SGN",
+   "nights": 4,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-13",
+   "price_krw": 338800,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA1NHThoaEgoyMDI3LTAzLTEzagUSA1NHTnIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:44:47+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "SGN",
+   "nights": 5,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-14",
+   "price_krw": 351400,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA1NHThoaEgoyMDI3LTAzLTE0agUSA1NHTnIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:44:54+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "SGN",
+   "nights": 6,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-15",
+   "price_krw": 353700,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA1NHThoaEgoyMDI3LTAzLTE1agUSA1NHTnIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:45:01+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "SGN",
+   "nights": 7,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-16",
+   "price_krw": 349700,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA1NHThoaEgoyMDI3LTAzLTE2agUSA1NHTnIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:45:08+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "CEB",
+   "nights": 3,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-12",
+   "price_krw": 352700,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0NFQhoaEgoyMDI3LTAzLTEyagUSA0NFQnIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:45:15+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "CEB",
+   "nights": 4,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-13",
+   "price_krw": 353600,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0NFQhoaEgoyMDI3LTAzLTEzagUSA0NFQnIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:45:22+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "CEB",
+   "nights": 5,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-14",
+   "price_krw": 361900,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0NFQhoaEgoyMDI3LTAzLTE0agUSA0NFQnIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:45:29+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "CEB",
+   "nights": 6,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-15",
+   "price_krw": 365200,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0NFQhoaEgoyMDI3LTAzLTE1agUSA0NFQnIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:45:36+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "CEB",
+   "nights": 7,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-16",
+   "price_krw": 363200,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0NFQhoaEgoyMDI3LTAzLTE2agUSA0NFQnIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:45:43+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "BKK",
+   "nights": 3,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-12",
+   "price_krw": 370300,
+   "airlines": [
+    "티웨이항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0JLSxoaEgoyMDI3LTAzLTEyagUSA0JLS3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:45:50+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "BKK",
+   "nights": 4,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-13",
+   "price_krw": 373800,
+   "airlines": [
+    "티웨이항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0JLSxoaEgoyMDI3LTAzLTEzagUSA0JLS3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:45:57+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "BKK",
+   "nights": 5,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-14",
+   "price_krw": 377600,
+   "airlines": [
+    "티웨이항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0JLSxoaEgoyMDI3LTAzLTE0agUSA0JLS3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:46:04+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "BKK",
+   "nights": 6,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-15",
+   "price_krw": 380400,
+   "airlines": [
+    "티웨이항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0JLSxoaEgoyMDI3LTAzLTE1agUSA0JLS3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:46:11+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "BKK",
+   "nights": 7,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-16",
+   "price_krw": 385500,
+   "airlines": [
+    "티웨이항공"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0JLSxoaEgoyMDI3LTAzLTE2agUSA0JLS3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:46:18+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "GUM",
+   "nights": 3,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-12",
+   "price_krw": 399800,
+   "airlines": [
+    "진에어"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0dVTRoaEgoyMDI3LTAzLTEyagUSA0dVTXIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:46:25+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "GUM",
+   "nights": 4,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-13",
+   "price_krw": 405800,
+   "airlines": [
+    "진에어"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0dVTRoaEgoyMDI3LTAzLTEzagUSA0dVTXIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:46:32+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "GUM",
+   "nights": 5,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-14",
+   "price_krw": 400700,
+   "airlines": [
+    "진에어"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0dVTRoaEgoyMDI3LTAzLTE0agUSA0dVTXIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:46:39+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "GUM",
+   "nights": 6,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-15",
+   "price_krw": 411900,
+   "airlines": [
+    "진에어"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0dVTRoaEgoyMDI3LTAzLTE1agUSA0dVTXIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:46:46+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "GUM",
+   "nights": 7,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-16",
+   "price_krw": 411500,
+   "airlines": [
+    "진에어"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0dVTRoaEgoyMDI3LTAzLTE2agUSA0dVTXIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:46:53+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "SYD",
+   "nights": 3,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-12",
+   "price_krw": 1039900,
+   "airlines": [
+    "젯스타"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA1NZRBoaEgoyMDI3LTAzLTEyagUSA1NZRHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:47:00+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "SYD",
+   "nights": 4,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-13",
+   "price_krw": 1041500,
+   "airlines": [
+    "젯스타"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA1NZRBoaEgoyMDI3LTAzLTEzagUSA1NZRHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:47:07+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "SYD",
+   "nights": 5,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-14",
+   "price_krw": 1065300,
+   "airlines": [
+    "젯스타"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA1NZRBoaEgoyMDI3LTAzLTE0agUSA1NZRHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:47:14+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "SYD",
+   "nights": 6,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-15",
+   "price_krw": 1093100,
+   "airlines": [
+    "젯스타"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA1NZRBoaEgoyMDI3LTAzLTE1agUSA1NZRHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:47:21+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "SYD",
+   "nights": 7,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-16",
+   "price_krw": 1088000,
+   "airlines": [
+    "젯스타"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA1NZRBoaEgoyMDI3LTAzLTE2agUSA1NZRHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:47:28+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "LAX",
+   "nights": 3,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-12",
+   "price_krw": 1173700,
+   "airlines": [
+    "에어프레미아"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0xBWBoaEgoyMDI3LTAzLTEyagUSA0xBWHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:47:35+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "LAX",
+   "nights": 4,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-13",
+   "price_krw": 1190100,
+   "airlines": [
+    "에어프레미아"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0xBWBoaEgoyMDI3LTAzLTEzagUSA0xBWHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:47:42+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "LAX",
+   "nights": 5,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-14",
+   "price_krw": 1198400,
+   "airlines": [
+    "에어프레미아"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0xBWBoaEgoyMDI3LTAzLTE0agUSA0xBWHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:47:49+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "LAX",
+   "nights": 6,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-15",
+   "price_krw": 1218700,
+   "airlines": [
+    "에어프레미아"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0xBWBoaEgoyMDI3LTAzLTE1agUSA0xBWHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:47:56+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "LAX",
+   "nights": 7,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-16",
+   "price_krw": 1215600,
+   "airlines": [
+    "에어프레미아"
+   ],
+   "stops": 0,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0xBWBoaEgoyMDI3LTAzLTE2agUSA0xBWHIFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:48:03+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "CDG",
+   "nights": 3,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-12",
+   "price_krw": 1239900,
+   "airlines": [
+    "핀에어"
+   ],
+   "stops": 1,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0NERxoaEgoyMDI3LTAzLTEyagUSA0NER3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:48:10+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "CDG",
+   "nights": 4,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-13",
+   "price_krw": 1222800,
+   "airlines": [
+    "핀에어"
+   ],
+   "stops": 1,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0NERxoaEgoyMDI3LTAzLTEzagUSA0NER3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:48:17+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "CDG",
+   "nights": 5,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-14",
+   "price_krw": 1236400,
+   "airlines": [
+    "핀에어"
+   ],
+   "stops": 1,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0NERxoaEgoyMDI3LTAzLTE0agUSA0NER3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:48:24+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "CDG",
+   "nights": 6,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-15",
+   "price_krw": 1273000,
+   "airlines": [
+    "핀에어"
+   ],
+   "stops": 1,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0NERxoaEgoyMDI3LTAzLTE1agUSA0NER3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:48:31+09:00"
+  },
+  {
+   "origin": "ICN",
+   "destination": "CDG",
+   "nights": 7,
+   "depart_date": "2027-03-09",
+   "return_date": "2027-03-16",
+   "price_krw": 1269200,
+   "airlines": [
+    "핀에어"
+   ],
+   "stops": 1,
+   "search_url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjctMDMtMDlqBRIDSUNOcgUSA0NERxoaEgoyMDI3LTAzLTE2agUSA0NER3IFEgNJQ05CAQFIAZgBAQ==&hl=ko&curr=KRW",
+   "collected_at": "2026-11-16T08:48:38+09:00"
+  }
+ ]
+}

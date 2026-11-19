@@ -1,0 +1,612 @@
+{
+ "schema_version": 1,
+ "origin": "ICN",
+ "destination": "DAD",
+ "city_ko": "다낭",
+ "country_ko": "베트남",
+ "region": "동남아",
+ "points": [
+  {
+   "collected_at": "2026-11-05T08:40:28+09:00",
+   "run_id": "20261105T080211",
+   "price_krw": 417300,
+   "rep_price_krw": 417300,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-05T14:40:28+09:00",
+   "run_id": "20261105T140211",
+   "price_krw": 426900,
+   "rep_price_krw": 426900,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-05T21:40:28+09:00",
+   "run_id": "20261105T210211",
+   "price_krw": 418700,
+   "rep_price_krw": 424400,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-06T08:40:28+09:00",
+   "run_id": "20261106T080211",
+   "price_krw": 422700,
+   "rep_price_krw": 422700,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-06T14:40:28+09:00",
+   "run_id": "20261106T140211",
+   "price_krw": 430100,
+   "rep_price_krw": 430100,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-06T21:40:28+09:00",
+   "run_id": "20261106T210211",
+   "price_krw": 426200,
+   "rep_price_krw": 426200,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-07T08:40:28+09:00",
+   "run_id": "20261107T080211",
+   "price_krw": 425500,
+   "rep_price_krw": 425500,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-07T14:40:28+09:00",
+   "run_id": "20261107T140211",
+   "price_krw": 423800,
+   "rep_price_krw": 423800,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-07T21:40:28+09:00",
+   "run_id": "20261107T210211",
+   "price_krw": 424500,
+   "rep_price_krw": 424500,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-08T08:40:28+09:00",
+   "run_id": "20261108T080211",
+   "price_krw": 408200,
+   "rep_price_krw": 410600,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-08T14:40:28+09:00",
+   "run_id": "20261108T140211",
+   "price_krw": 421200,
+   "rep_price_krw": 421200,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-08T21:40:28+09:00",
+   "run_id": "20261108T210211",
+   "price_krw": 412000,
+   "rep_price_krw": 412000,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-09T08:40:28+09:00",
+   "run_id": "20261109T080211",
+   "price_krw": 426000,
+   "rep_price_krw": 426000,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-09T14:40:28+09:00",
+   "run_id": "20261109T140211",
+   "price_krw": 425200,
+   "rep_price_krw": 428200,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-09T21:40:28+09:00",
+   "run_id": "20261109T210211",
+   "price_krw": 427300,
+   "rep_price_krw": 427300,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-10T08:40:28+09:00",
+   "run_id": "20261110T080211",
+   "price_krw": 420700,
+   "rep_price_krw": 425300,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-10T14:40:28+09:00",
+   "run_id": "20261110T140211",
+   "price_krw": 432700,
+   "rep_price_krw": 432700,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-10T21:40:28+09:00",
+   "run_id": "20261110T210211",
+   "price_krw": 415100,
+   "rep_price_krw": 417300,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-11T08:40:28+09:00",
+   "run_id": "20261111T080211",
+   "price_krw": 417300,
+   "rep_price_krw": 417300,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-11T14:40:28+09:00",
+   "run_id": "20261111T140211",
+   "price_krw": 414000,
+   "rep_price_krw": 414000,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-11T21:40:28+09:00",
+   "run_id": "20261111T210211",
+   "price_krw": 422800,
+   "rep_price_krw": 431400,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-12T08:40:28+09:00",
+   "run_id": "20261112T080211",
+   "price_krw": 430200,
+   "rep_price_krw": 430200,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-12T14:40:28+09:00",
+   "run_id": "20261112T140211",
+   "price_krw": 426300,
+   "rep_price_krw": 432000,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-12T21:40:28+09:00",
+   "run_id": "20261112T210211",
+   "price_krw": 416700,
+   "rep_price_krw": 416700,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-13T08:40:28+09:00",
+   "run_id": "20261113T080211",
+   "price_krw": 426500,
+   "rep_price_krw": 426500,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-13T14:40:28+09:00",
+   "run_id": "20261113T140211",
+   "price_krw": 430700,
+   "rep_price_krw": 430700,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-13T21:40:28+09:00",
+   "run_id": "20261113T210211",
+   "price_krw": 417100,
+   "rep_price_krw": 417100,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-14T08:40:28+09:00",
+   "run_id": "20261114T080211",
+   "price_krw": 423300,
+   "rep_price_krw": 423300,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-14T14:40:28+09:00",
+   "run_id": "20261114T140211",
+   "price_krw": 422000,
+   "rep_price_krw": 422000,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-14T21:40:28+09:00",
+   "run_id": "20261114T210211",
+   "price_krw": 427200,
+   "rep_price_krw": 427200,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-15T08:40:28+09:00",
+   "run_id": "20261115T080211",
+   "price_krw": 413200,
+   "rep_price_krw": 418800,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-15T14:40:28+09:00",
+   "run_id": "20261115T140211",
+   "price_krw": 419500,
+   "rep_price_krw": 419500,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-15T21:40:28+09:00",
+   "run_id": "20261115T210211",
+   "price_krw": 414500,
+   "rep_price_krw": 414500,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-16T08:40:28+09:00",
+   "run_id": "20261116T080211",
+   "price_krw": 422700,
+   "rep_price_krw": 422700,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-16T14:40:28+09:00",
+   "run_id": "20261116T140211",
+   "price_krw": 419900,
+   "rep_price_krw": 428700,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-16T21:40:28+09:00",
+   "run_id": "20261116T210211",
+   "price_krw": 419700,
+   "rep_price_krw": 419700,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-17T08:40:28+09:00",
+   "run_id": "20261117T080211",
+   "price_krw": 417200,
+   "rep_price_krw": 422200,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-17T14:40:28+09:00",
+   "run_id": "20261117T140211",
+   "price_krw": 432100,
+   "rep_price_krw": 432100,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-17T21:40:28+09:00",
+   "run_id": "20261117T210211",
+   "price_krw": 359000,
+   "rep_price_krw": 359000,
+   "depart_date": "2026-12-21",
+   "return_date": "2026-12-25",
+   "nights": 4,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-18T08:40:28+09:00",
+   "run_id": "20261118T080211",
+   "price_krw": 361000,
+   "rep_price_krw": 361000,
+   "depart_date": "2026-12-21",
+   "return_date": "2026-12-25",
+   "nights": 4,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-18T14:40:28+09:00",
+   "run_id": "20261118T140211",
+   "price_krw": 357000,
+   "rep_price_krw": 357000,
+   "depart_date": "2026-12-21",
+   "return_date": "2026-12-25",
+   "nights": 4,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-18T21:40:28+09:00",
+   "run_id": "20261118T210211",
+   "price_krw": 359000,
+   "rep_price_krw": 359000,
+   "depart_date": "2026-12-21",
+   "return_date": "2026-12-25",
+   "nights": 4,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-19T08:41:38+09:00",
+   "run_id": "20261119T080211",
+   "price_krw": 338000,
+   "rep_price_krw": 338000,
+   "depart_date": "2026-12-21",
+   "return_date": "2026-12-25",
+   "nights": 4,
+   "airlines": [
+    "비엣젯항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  }
+ ]
+}

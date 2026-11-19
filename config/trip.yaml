@@ -1,0 +1,82 @@
+# 여행 조건과 판정·수집 설정. 값의 의미는 docs/SPEC.md 를 기준으로 한다.
+timezone: Asia/Seoul
+
+trip:
+  adults: 1
+  depart_from: "2026-12-17"   # 출발 가능 첫날
+  depart_to: "2026-12-30"     # 출발 가능 마지막 날
+  return_by: "2027-01-03"     # 귀국일은 이 날짜 이전(당일 포함)
+  nights_min: 3
+  nights_max: 7
+  language: ko
+  currency: KRW
+
+# 항공편 필터: 조건을 벗어나는 항공편은 최저가 계산에서 제외한다.
+filters:
+  max_stops: 1
+  max_duration_minutes: 1500   # 가는 편 총 소요 시간(경유 대기 포함)
+
+# 조회량 조절
+sampling:
+  # 모든 목적지에 매 실행마다 조회하는 대표 조합 6개 (출발일, 박수)
+  representative_combos:
+    - { depart: "2026-12-17", nights: 3 }   # 목 -> 일
+    - { depart: "2026-12-18", nights: 5 }   # 금 -> 수
+    - { depart: "2026-12-21", nights: 4 }   # 월 -> 금
+    - { depart: "2026-12-23", nights: 7 }   # 수 -> 수
+    - { depart: "2026-12-27", nights: 4 }   # 일 -> 목
+    - { depart: "2026-12-29", nights: 5 }   # 화 -> 일(1/3)
+  expand_top_n: 10            # 대표 조합 최저가 하위 N개 목적지를 전체 조합(64개)으로 확대
+  expand_rank_by: price       # 확대 대상 선정 기준: 대표 조합 최저가(원) 오름차순
+
+# 요청 간격과 재시도
+pacing:
+  min_interval_seconds: 6
+  jitter_seconds: 2                 # 간격에 0~2초를 무작위로 더한다
+  retry_backoff_seconds: [20, 60]   # 봇 확인 페이지·네트워크 오류 시 재시도 대기(최대 2회)
+  request_timeout_seconds: 30
+  abort_after_consecutive_query_failures: 8   # 재시도 후에도 연속 실패하면 해당 실행을 중단
+  max_run_minutes: 150              # 실행 시간 상한. 초과하면 남은 조회를 생략하고 저장한다(Actions 제한 시간보다 짧게 둔다)
+
+# 저렴함 판정 (기준 a~d 중 min_criteria 개 이상 해당하면 특가)
+judge:
+  min_criteria: 2
+  own_history:
+    drop_ratio: 0.15          # 자체 이력 중앙값보다 15% 이상 낮음
+    min_samples: 9            # 과거 실행 9회(약 3일) 이상 누적 후 평가
+  google_60d:
+    percentile: 10            # 최근 약 60일 가격의 하위 10% 값 이하
+    min_points: 30
+  realert_drop_ratio: 0.05    # 직전 발송 가격보다 5% 이상 낮을 때만 재발송
+
+# 비성수기 기준가: 3월 평일 출발 날짜로 노선·박수별 조회
+baseline:
+  depart_date: "2027-03-09"   # 화요일
+  refresh_days: 7
+  max_queries_per_run: 100
+
+# 실패 처리
+failure:
+  failed_run_success_ratio: 0.5     # 성공 조회 비율이 이 값 미만이면 실행 실패
+  max_no_result_ratio: 0.5          # 결과 없음 비율이 이 값을 초과하면 partial 로 분류(가격을 1건도 얻지 못하면 failed)
+  stop_notice_after_consecutive_failed_runs: 3
+
+# 호텔
+hotels:
+  max_items: 5                  # alerts.json 에 저장하는 호텔 수
+  telegram_items: 3             # 텔레그램 메시지에 포함하는 호텔 수
+  max_serpapi_calls_per_run: 4
+  max_serpapi_calls_per_month: 230
+
+# 보관 한도
+retention:
+  history_points_per_destination: 400
+  alerts: 200
+  status_runs: 30
+
+# 알림
+notify:
+  # 사이트 주소(비밀 값 아님). 텔레그램 메시지 마지막 줄에 "{주소}#dest={목적지 코드}" 형식으로 포함한다.
+  # 비워 두면 GitHub Actions 실행 시 저장소 이름으로 Pages 주소(https://{계정}.github.io/{저장소}/)를 사용한다.
+  # 사용자 지정 도메인을 사용하면 그 주소를 입력한다.
+  site_url: ""

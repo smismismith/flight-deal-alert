@@ -1,0 +1,612 @@
+{
+ "schema_version": 1,
+ "origin": "ICN",
+ "destination": "NRT",
+ "city_ko": "도쿄(나리타)",
+ "country_ko": "일본",
+ "region": "일본",
+ "points": [
+  {
+   "collected_at": "2026-11-05T08:20:28+09:00",
+   "run_id": "20261105T080211",
+   "price_krw": 407200,
+   "rep_price_krw": 407200,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-05T14:20:28+09:00",
+   "run_id": "20261105T140211",
+   "price_krw": 398500,
+   "rep_price_krw": 398500,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-05T21:20:28+09:00",
+   "run_id": "20261105T210211",
+   "price_krw": 411200,
+   "rep_price_krw": 411200,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-06T08:20:28+09:00",
+   "run_id": "20261106T080211",
+   "price_krw": 404400,
+   "rep_price_krw": 404400,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-06T14:20:28+09:00",
+   "run_id": "20261106T140211",
+   "price_krw": 399700,
+   "rep_price_krw": 399700,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-06T21:20:28+09:00",
+   "run_id": "20261106T210211",
+   "price_krw": 410400,
+   "rep_price_krw": 410400,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-07T08:20:28+09:00",
+   "run_id": "20261107T080211",
+   "price_krw": 404900,
+   "rep_price_krw": 404900,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-07T14:20:28+09:00",
+   "run_id": "20261107T140211",
+   "price_krw": 396400,
+   "rep_price_krw": 407500,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-07T21:20:28+09:00",
+   "run_id": "20261107T210211",
+   "price_krw": 394800,
+   "rep_price_krw": 398400,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-08T08:20:28+09:00",
+   "run_id": "20261108T080211",
+   "price_krw": 404500,
+   "rep_price_krw": 408500,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-08T14:20:28+09:00",
+   "run_id": "20261108T140211",
+   "price_krw": 394100,
+   "rep_price_krw": 394100,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-08T21:20:28+09:00",
+   "run_id": "20261108T210211",
+   "price_krw": 397800,
+   "rep_price_krw": 397800,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-09T08:20:28+09:00",
+   "run_id": "20261109T080211",
+   "price_krw": 392000,
+   "rep_price_krw": 396800,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-09T14:20:28+09:00",
+   "run_id": "20261109T140211",
+   "price_krw": 409100,
+   "rep_price_krw": 409100,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-09T21:20:28+09:00",
+   "run_id": "20261109T210211",
+   "price_krw": 393600,
+   "rep_price_krw": 393600,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-10T08:20:28+09:00",
+   "run_id": "20261110T080211",
+   "price_krw": 410200,
+   "rep_price_krw": 410200,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-10T14:20:28+09:00",
+   "run_id": "20261110T140211",
+   "price_krw": 401300,
+   "rep_price_krw": 401300,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-10T21:20:28+09:00",
+   "run_id": "20261110T210211",
+   "price_krw": 385500,
+   "rep_price_krw": 393700,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-11T08:20:28+09:00",
+   "run_id": "20261111T080211",
+   "price_krw": 400700,
+   "rep_price_krw": 400700,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-11T14:20:28+09:00",
+   "run_id": "20261111T140211",
+   "price_krw": 401100,
+   "rep_price_krw": 401100,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-11T21:20:28+09:00",
+   "run_id": "20261111T210211",
+   "price_krw": 394200,
+   "rep_price_krw": 394200,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-12T08:20:28+09:00",
+   "run_id": "20261112T080211",
+   "price_krw": 388300,
+   "rep_price_krw": 388300,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-12T14:20:28+09:00",
+   "run_id": "20261112T140211",
+   "price_krw": 392600,
+   "rep_price_krw": 403500,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-12T21:20:28+09:00",
+   "run_id": "20261112T210211",
+   "price_krw": 399500,
+   "rep_price_krw": 399500,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-13T08:20:28+09:00",
+   "run_id": "20261113T080211",
+   "price_krw": 384100,
+   "rep_price_krw": 388900,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-13T14:20:28+09:00",
+   "run_id": "20261113T140211",
+   "price_krw": 391000,
+   "rep_price_krw": 402100,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-13T21:20:28+09:00",
+   "run_id": "20261113T210211",
+   "price_krw": 401900,
+   "rep_price_krw": 401900,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-14T08:20:28+09:00",
+   "run_id": "20261114T080211",
+   "price_krw": 404300,
+   "rep_price_krw": 404300,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-14T14:20:28+09:00",
+   "run_id": "20261114T140211",
+   "price_krw": 406600,
+   "rep_price_krw": 408800,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-14T21:20:28+09:00",
+   "run_id": "20261114T210211",
+   "price_krw": 396200,
+   "rep_price_krw": 396200,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-15T08:20:28+09:00",
+   "run_id": "20261115T080211",
+   "price_krw": 380500,
+   "rep_price_krw": 387500,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-15T14:20:28+09:00",
+   "run_id": "20261115T140211",
+   "price_krw": 400400,
+   "rep_price_krw": 400400,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-15T21:20:28+09:00",
+   "run_id": "20261115T210211",
+   "price_krw": 392800,
+   "rep_price_krw": 392800,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-16T08:20:28+09:00",
+   "run_id": "20261116T080211",
+   "price_krw": 388800,
+   "rep_price_krw": 388800,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-16T14:20:28+09:00",
+   "run_id": "20261116T140211",
+   "price_krw": 406600,
+   "rep_price_krw": 406600,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-16T21:20:28+09:00",
+   "run_id": "20261116T210211",
+   "price_krw": 394500,
+   "rep_price_krw": 394500,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-17T08:20:28+09:00",
+   "run_id": "20261117T080211",
+   "price_krw": 384700,
+   "rep_price_krw": 391200,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-17T14:20:28+09:00",
+   "run_id": "20261117T140211",
+   "price_krw": 388000,
+   "rep_price_krw": 394300,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-17T21:20:28+09:00",
+   "run_id": "20261117T210211",
+   "price_krw": 405300,
+   "rep_price_krw": 405300,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-18T08:20:28+09:00",
+   "run_id": "20261118T080211",
+   "price_krw": 398900,
+   "rep_price_krw": 406400,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-18T14:20:28+09:00",
+   "run_id": "20261118T140211",
+   "price_krw": 391600,
+   "rep_price_krw": 401300,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-18T21:20:28+09:00",
+   "run_id": "20261118T210211",
+   "price_krw": 399600,
+   "rep_price_krw": 399600,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-19T08:21:31+09:00",
+   "run_id": "20261119T080211",
+   "price_krw": 404400,
+   "rep_price_krw": 409000,
+   "depart_date": "2026-12-21",
+   "return_date": "2026-12-24",
+   "nights": 3,
+   "airlines": [
+    "이스타항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  }
+ ]
+}

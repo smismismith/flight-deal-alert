@@ -1,0 +1,20 @@
+[project]
+name = "flight-search"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "fast-flights>=3.1.0",
+    "pyyaml>=6.0.3",
+    "typing-extensions>=4.16.0",
+]
+
+[dependency-groups]
+dev = [
+    "jsonschema>=4.26.0",
+    "pytest>=9.2.0",
+    "pyyaml>=6.0.3",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

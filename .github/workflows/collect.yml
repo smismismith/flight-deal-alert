@@ -1,0 +1,73 @@
+name: collect
+
+# KST 08:00, 14:00, 21:00 = UTC 23:00(전날), 05:00, 12:00
+# 출발 가능 기간(~2026-12-30)이 끝나면 수집기는 조회 없이 종료 코드 0 으로 끝난다.
+# 그 뒤에는 저장소의 Actions 탭에서 이 워크플로를 Disable workflow 로 비활성화한다(README 참고).
+on:
+  schedule:
+    - cron: "0 23,5,12 * * *"
+  workflow_dispatch:
+    inputs:
+      destinations:
+        description: "조회할 목적지 코드(쉼표 구분). 비우면 전체"
+        required: false
+        default: ""
+      max_queries:
+        description: "조회 건수 상한. 비우면 제한 없음"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+# 이전 실행이 끝나지 않았으면 새 실행은 대기한다(진행 중인 수집은 취소하지 않는다).
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    # 수집기는 config/trip.yaml 의 pacing.max_run_minutes(150분)를 넘으면 남은 조회를 생략하고 저장한다.
+    # 수집 단계가 그래도 끝나지 않으면 단계 제한 시간(175분)에 종료되고, 커밋 단계는 계속 실행된다.
+    timeout-minutes: 200
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: 의존성 설치
+        run: uv sync --frozen --no-dev
+
+      - name: 수집 실행
+        id: collect
+        timeout-minutes: 175
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+          INPUT_DESTINATIONS: ${{ github.event.inputs.destinations }}
+          INPUT_MAX_QUERIES: ${{ github.event.inputs.max_queries }}
+        run: |
+          args=()
+          if [ -n "$INPUT_DESTINATIONS" ]; then args+=(--destinations "$INPUT_DESTINATIONS"); fi
+          if [ -n "$INPUT_MAX_QUERIES" ]; then args+=(--max-queries "$INPUT_MAX_QUERIES"); fi
+          uv run --no-dev python -m collector.main "${args[@]}"
+
+      # 수집 결과가 failed(종료 코드 1)여도 status.json 등 변경분은 커밋한다.
+      - name: data 변경분 커밋
+        if: always()
+        run: |
+          if [ ! -d data ]; then echo "data 폴더가 없습니다"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then echo "변경 없음"; exit 0; fi
+          git commit -m "data: 수집 결과 $(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M') KST"
+          for i in 1 2 3; do
+            if git push; then exit 0; fi
+            git pull --rebase
+          done
+          exit 1

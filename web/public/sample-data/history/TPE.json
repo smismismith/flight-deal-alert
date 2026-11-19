@@ -1,0 +1,612 @@
+{
+ "schema_version": 1,
+ "origin": "ICN",
+ "destination": "TPE",
+ "city_ko": "타이베이(타오위안)",
+ "country_ko": "대만",
+ "region": "중화권",
+ "points": [
+  {
+   "collected_at": "2026-11-05T08:30:28+09:00",
+   "run_id": "20261105T080211",
+   "price_krw": 379800,
+   "rep_price_krw": 379800,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-05T14:30:28+09:00",
+   "run_id": "20261105T140211",
+   "price_krw": 378600,
+   "rep_price_krw": 378600,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-05T21:30:28+09:00",
+   "run_id": "20261105T210211",
+   "price_krw": 361000,
+   "rep_price_krw": 361000,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-06T08:30:28+09:00",
+   "run_id": "20261106T080211",
+   "price_krw": 361700,
+   "rep_price_krw": 361700,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-06T14:30:28+09:00",
+   "run_id": "20261106T140211",
+   "price_krw": 380300,
+   "rep_price_krw": 380300,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-06T21:30:28+09:00",
+   "run_id": "20261106T210211",
+   "price_krw": 377900,
+   "rep_price_krw": 377900,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-07T08:30:28+09:00",
+   "run_id": "20261107T080211",
+   "price_krw": 369900,
+   "rep_price_krw": 373200,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-07T14:30:28+09:00",
+   "run_id": "20261107T140211",
+   "price_krw": 369700,
+   "rep_price_krw": 369700,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-07T21:30:28+09:00",
+   "run_id": "20261107T210211",
+   "price_krw": 364500,
+   "rep_price_krw": 364500,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-08T08:30:28+09:00",
+   "run_id": "20261108T080211",
+   "price_krw": 376800,
+   "rep_price_krw": 376800,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-08T14:30:28+09:00",
+   "run_id": "20261108T140211",
+   "price_krw": 360600,
+   "rep_price_krw": 364400,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-08T21:30:28+09:00",
+   "run_id": "20261108T210211",
+   "price_krw": 356600,
+   "rep_price_krw": 363800,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-09T08:30:28+09:00",
+   "run_id": "20261109T080211",
+   "price_krw": 367000,
+   "rep_price_krw": 367000,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-09T14:30:28+09:00",
+   "run_id": "20261109T140211",
+   "price_krw": 362600,
+   "rep_price_krw": 362600,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-09T21:30:28+09:00",
+   "run_id": "20261109T210211",
+   "price_krw": 376800,
+   "rep_price_krw": 381300,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-10T08:30:28+09:00",
+   "run_id": "20261110T080211",
+   "price_krw": 353800,
+   "rep_price_krw": 364600,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-10T14:30:28+09:00",
+   "run_id": "20261110T140211",
+   "price_krw": 375700,
+   "rep_price_krw": 375700,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-10T21:30:28+09:00",
+   "run_id": "20261110T210211",
+   "price_krw": 370500,
+   "rep_price_krw": 378400,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-11T08:30:28+09:00",
+   "run_id": "20261111T080211",
+   "price_krw": 355800,
+   "rep_price_krw": 363500,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-11T14:30:28+09:00",
+   "run_id": "20261111T140211",
+   "price_krw": 362700,
+   "rep_price_krw": 362700,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-11T21:30:28+09:00",
+   "run_id": "20261111T210211",
+   "price_krw": 376200,
+   "rep_price_krw": 376200,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-12T08:30:28+09:00",
+   "run_id": "20261112T080211",
+   "price_krw": 298000,
+   "rep_price_krw": 298000,
+   "depart_date": "2026-12-21",
+   "return_date": "2026-12-25",
+   "nights": 4,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-12T14:30:28+09:00",
+   "run_id": "20261112T140211",
+   "price_krw": 299000,
+   "rep_price_krw": 299000,
+   "depart_date": "2026-12-21",
+   "return_date": "2026-12-25",
+   "nights": 4,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-12T21:30:28+09:00",
+   "run_id": "20261112T210211",
+   "price_krw": 298000,
+   "rep_price_krw": 298000,
+   "depart_date": "2026-12-21",
+   "return_date": "2026-12-25",
+   "nights": 4,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-13T08:30:28+09:00",
+   "run_id": "20261113T080211",
+   "price_krw": 302000,
+   "rep_price_krw": 302000,
+   "depart_date": "2026-12-21",
+   "return_date": "2026-12-25",
+   "nights": 4,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-13T14:30:28+09:00",
+   "run_id": "20261113T140211",
+   "price_krw": 304000,
+   "rep_price_krw": 304000,
+   "depart_date": "2026-12-21",
+   "return_date": "2026-12-25",
+   "nights": 4,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-13T21:30:28+09:00",
+   "run_id": "20261113T210211",
+   "price_krw": 371200,
+   "rep_price_krw": 371200,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-14T08:30:28+09:00",
+   "run_id": "20261114T080211",
+   "price_krw": 358100,
+   "rep_price_krw": 368300,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-14T14:30:28+09:00",
+   "run_id": "20261114T140211",
+   "price_krw": 369800,
+   "rep_price_krw": 369800,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-14T21:30:28+09:00",
+   "run_id": "20261114T210211",
+   "price_krw": 365700,
+   "rep_price_krw": 365700,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-15T08:30:28+09:00",
+   "run_id": "20261115T080211",
+   "price_krw": 367800,
+   "rep_price_krw": 375900,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-15T14:30:28+09:00",
+   "run_id": "20261115T140211",
+   "price_krw": 369100,
+   "rep_price_krw": 369100,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-15T21:30:28+09:00",
+   "run_id": "20261115T210211",
+   "price_krw": 380200,
+   "rep_price_krw": 380200,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-16T08:30:28+09:00",
+   "run_id": "20261116T080211",
+   "price_krw": 381000,
+   "rep_price_krw": 381000,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-16T14:30:28+09:00",
+   "run_id": "20261116T140211",
+   "price_krw": 359300,
+   "rep_price_krw": 366300,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-16T21:30:28+09:00",
+   "run_id": "20261116T210211",
+   "price_krw": 372500,
+   "rep_price_krw": 376500,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-17T08:30:28+09:00",
+   "run_id": "20261117T080211",
+   "price_krw": 367200,
+   "rep_price_krw": 367200,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-17T14:30:28+09:00",
+   "run_id": "20261117T140211",
+   "price_krw": 366100,
+   "rep_price_krw": 368100,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-17T21:30:28+09:00",
+   "run_id": "20261117T210211",
+   "price_krw": 363000,
+   "rep_price_krw": 371200,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-18T08:30:28+09:00",
+   "run_id": "20261118T080211",
+   "price_krw": 368100,
+   "rep_price_krw": 368100,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-18T14:30:28+09:00",
+   "run_id": "20261118T140211",
+   "price_krw": 379000,
+   "rep_price_krw": 383000,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-18T21:30:28+09:00",
+   "run_id": "20261118T210211",
+   "price_krw": 383500,
+   "rep_price_krw": 383500,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-19T08:29:11+09:00",
+   "run_id": "20261119T080211",
+   "price_krw": 373800,
+   "rep_price_krw": 373800,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "제주항공"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  }
+ ]
+}

@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://flight-deal-alert.local/schemas/history.schema.json",
+  "title": "data/history/{DEST}.json",
+  "description": "목적지별 실행 단위 최저가 이력(시각 오름차순).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "origin",
+    "destination",
+    "city_ko",
+    "country_ko",
+    "region",
+    "points"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "origin": {
+      "$ref": "#/$defs/iata"
+    },
+    "destination": {
+      "$ref": "#/$defs/iata"
+    },
+    "city_ko": {
+      "type": "string",
+      "minLength": 1
+    },
+    "country_ko": {
+      "type": "string",
+      "minLength": 1
+    },
+    "region": {
+      "$ref": "#/$defs/region"
+    },
+    "points": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "collected_at",
+          "run_id",
+          "price_krw",
+          "rep_price_krw",
+          "depart_date",
+          "return_date",
+          "nights",
+          "airlines",
+          "stops",
+          "combos_checked"
+        ],
+        "properties": {
+          "collected_at": {
+            "$ref": "#/$defs/iso_kst"
+          },
+          "run_id": {
+            "$ref": "#/$defs/run_id"
+          },
+          "price_krw": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "해당 실행에서 조회한 전체 조합의 최저가"
+          },
+          "rep_price_krw": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0,
+            "description": "대표 조합 6개만의 최저가. 기준 c 의 중앙값 계산에 사용"
+          },
+          "depart_date": {
+            "$ref": "#/$defs/date"
+          },
+          "return_date": {
+            "$ref": "#/$defs/date"
+          },
+          "nights": {
+            "type": "integer"
+          },
+          "airlines": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "stops": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "combos_checked": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "iata": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "iso_kst": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\+09:00$",
+      "description": "ISO 8601, KST 고정. 예: 2026-11-19T08:02:11+09:00"
+    },
+    "region": {
+      "enum": [
+        "국내",
+        "일본",
+        "중화권",
+        "동남아",
+        "대양주",
+        "유럽",
+        "미주",
+        "기타"
+      ]
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^\\d{8}T\\d{6}$",
+      "description": "실행 시작 시각(KST) YYYYMMDDTHHMMSS"
+    }
+  }
+}

@@ -7,3 +7,7 @@ dist/
 .DS_Store
 .secrets.env
 .env*
+.pytest_cache/
+# 검토·시험 실행 출력(커밋하지 않는다)
+out/
+web/screenshots/

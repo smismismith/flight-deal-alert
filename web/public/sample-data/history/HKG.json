@@ -1,0 +1,612 @@
+{
+ "schema_version": 1,
+ "origin": "ICN",
+ "destination": "HKG",
+ "city_ko": "홍콩",
+ "country_ko": "홍콩",
+ "region": "중화권",
+ "points": [
+  {
+   "collected_at": "2026-11-05T08:35:28+09:00",
+   "run_id": "20261105T080211",
+   "price_krw": 441500,
+   "rep_price_krw": 441500,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-05T14:35:28+09:00",
+   "run_id": "20261105T140211",
+   "price_krw": 432200,
+   "rep_price_krw": 432200,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-05T21:35:28+09:00",
+   "run_id": "20261105T210211",
+   "price_krw": 439100,
+   "rep_price_krw": 439100,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-06T08:35:28+09:00",
+   "run_id": "20261106T080211",
+   "price_krw": 418200,
+   "rep_price_krw": 418200,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-06T14:35:28+09:00",
+   "run_id": "20261106T140211",
+   "price_krw": 430500,
+   "rep_price_krw": 430500,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-06T21:35:28+09:00",
+   "run_id": "20261106T210211",
+   "price_krw": 435200,
+   "rep_price_krw": 435200,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-07T08:35:28+09:00",
+   "run_id": "20261107T080211",
+   "price_krw": 420200,
+   "rep_price_krw": 420200,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-07T14:35:28+09:00",
+   "run_id": "20261107T140211",
+   "price_krw": 437900,
+   "rep_price_krw": 437900,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-07T21:35:28+09:00",
+   "run_id": "20261107T210211",
+   "price_krw": 415800,
+   "rep_price_krw": 426800,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-08T08:35:28+09:00",
+   "run_id": "20261108T080211",
+   "price_krw": 428600,
+   "rep_price_krw": 431500,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-08T14:35:28+09:00",
+   "run_id": "20261108T140211",
+   "price_krw": 433100,
+   "rep_price_krw": 433100,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-08T21:35:28+09:00",
+   "run_id": "20261108T210211",
+   "price_krw": 411400,
+   "rep_price_krw": 417200,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-09T08:35:28+09:00",
+   "run_id": "20261109T080211",
+   "price_krw": 424300,
+   "rep_price_krw": 432900,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-09T14:35:28+09:00",
+   "run_id": "20261109T140211",
+   "price_krw": 424000,
+   "rep_price_krw": 424000,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-09T21:35:28+09:00",
+   "run_id": "20261109T210211",
+   "price_krw": 422100,
+   "rep_price_krw": 433500,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-10T08:35:28+09:00",
+   "run_id": "20261110T080211",
+   "price_krw": 409800,
+   "rep_price_krw": 417200,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-10T14:35:28+09:00",
+   "run_id": "20261110T140211",
+   "price_krw": 418900,
+   "rep_price_krw": 418900,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-10T21:35:28+09:00",
+   "run_id": "20261110T210211",
+   "price_krw": 421200,
+   "rep_price_krw": 427200,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-11T08:35:28+09:00",
+   "run_id": "20261111T080211",
+   "price_krw": 423700,
+   "rep_price_krw": 423700,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-11T14:35:28+09:00",
+   "run_id": "20261111T140211",
+   "price_krw": 405800,
+   "rep_price_krw": 411400,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-11T21:35:28+09:00",
+   "run_id": "20261111T210211",
+   "price_krw": 430900,
+   "rep_price_krw": 430900,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-12T08:35:28+09:00",
+   "run_id": "20261112T080211",
+   "price_krw": 418000,
+   "rep_price_krw": 423100,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-12T14:35:28+09:00",
+   "run_id": "20261112T140211",
+   "price_krw": 412600,
+   "rep_price_krw": 415500,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-12T21:35:28+09:00",
+   "run_id": "20261112T210211",
+   "price_krw": 413200,
+   "rep_price_krw": 425400,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-13T08:35:28+09:00",
+   "run_id": "20261113T080211",
+   "price_krw": 410100,
+   "rep_price_krw": 410100,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-13T14:35:28+09:00",
+   "run_id": "20261113T140211",
+   "price_krw": 420900,
+   "rep_price_krw": 420900,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-13T21:35:28+09:00",
+   "run_id": "20261113T210211",
+   "price_krw": 407700,
+   "rep_price_krw": 417500,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-14T08:35:28+09:00",
+   "run_id": "20261114T080211",
+   "price_krw": 428700,
+   "rep_price_krw": 428700,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-14T14:35:28+09:00",
+   "run_id": "20261114T140211",
+   "price_krw": 421200,
+   "rep_price_krw": 421200,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-14T21:35:28+09:00",
+   "run_id": "20261114T210211",
+   "price_krw": 410100,
+   "rep_price_krw": 418800,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-15T08:35:28+09:00",
+   "run_id": "20261115T080211",
+   "price_krw": 412000,
+   "rep_price_krw": 412000,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-15T14:35:28+09:00",
+   "run_id": "20261115T140211",
+   "price_krw": 425000,
+   "rep_price_krw": 425000,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-15T21:35:28+09:00",
+   "run_id": "20261115T210211",
+   "price_krw": 408800,
+   "rep_price_krw": 408800,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-16T08:35:28+09:00",
+   "run_id": "20261116T080211",
+   "price_krw": 418800,
+   "rep_price_krw": 418800,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-16T14:35:28+09:00",
+   "run_id": "20261116T140211",
+   "price_krw": 416300,
+   "rep_price_krw": 416300,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-16T21:35:28+09:00",
+   "run_id": "20261116T210211",
+   "price_krw": 417400,
+   "rep_price_krw": 417400,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-17T08:35:28+09:00",
+   "run_id": "20261117T080211",
+   "price_krw": 397800,
+   "rep_price_krw": 405500,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-17T14:35:28+09:00",
+   "run_id": "20261117T140211",
+   "price_krw": 398200,
+   "rep_price_krw": 410300,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-17T21:35:28+09:00",
+   "run_id": "20261117T210211",
+   "price_krw": 404200,
+   "rep_price_krw": 409000,
+   "depart_date": "2026-12-18",
+   "return_date": "2026-12-22",
+   "nights": 4,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-18T08:35:28+09:00",
+   "run_id": "20261118T080211",
+   "price_krw": 422500,
+   "rep_price_krw": 422500,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 6
+  },
+  {
+   "collected_at": "2026-11-18T14:35:28+09:00",
+   "run_id": "20261118T140211",
+   "price_krw": 405300,
+   "rep_price_krw": 405300,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-18T21:35:28+09:00",
+   "run_id": "20261118T210211",
+   "price_krw": 423600,
+   "rep_price_krw": 423600,
+   "depart_date": "2026-12-17",
+   "return_date": "2026-12-20",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  },
+  {
+   "collected_at": "2026-11-19T08:36:31+09:00",
+   "run_id": "20261119T080211",
+   "price_krw": 427800,
+   "rep_price_krw": 431100,
+   "depart_date": "2026-12-21",
+   "return_date": "2026-12-24",
+   "nights": 3,
+   "airlines": [
+    "홍콩 익스프레스"
+   ],
+   "stops": 0,
+   "combos_checked": 64
+  }
+ ]
+}

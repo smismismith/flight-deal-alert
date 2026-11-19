@@ -1,0 +1,133 @@
+/* 디자인 토큰(DESIGN 3장). 색상 값은 이 파일에만 둔다. */
+:root {
+  color-scheme: light dark;
+
+  --bg: #f5f3ee;
+  --surface: #ffffff;
+  --surface-sunk: #ece9e1;
+  --border: #d9d4c8;
+  --border-strong: #8c8576;
+  --text: #18212b;
+  --text-2: #46515e;
+  --text-3: #5f6975;
+  --deal: #2743b8;
+  --deal-bg: #e8ecfb;
+  --on-deal: #ffffff;
+  --btn-bg: #18212b;
+  --btn-text: #ffffff;
+  --ok: #1b7046;
+  --ok-bg: #e3f3ea;
+  --warn: #8a5a00;
+  --warn-bg: #fbf0d9;
+  --crit: #b3261e;
+  --crit-bg: #fbe7e5;
+  --series-own: #008c7e;
+  --series-google: #b8552a;
+  --band: rgba(24, 33, 43, 0.07);
+
+  --heat-1: #80c1b5;
+  --heat-1-text: #18212b;
+  --heat-2: #57a89b;
+  --heat-2-text: #18212b;
+  --heat-3: #2b8377;
+  --heat-3-text: #ffffff;
+  --heat-4: #17665d;
+  --heat-4-text: #ffffff;
+  --heat-5: #0a4640;
+  --heat-5-text: #ffffff;
+
+  --font-body: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    "Malgun Gothic", "Noto Sans KR", sans-serif;
+  --font-code: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* 크기는 rem(기준 16px) */
+  --fs-price-xl: 1.875rem;
+  --lh-price-xl: 2.25rem;
+  --fs-price-l: 1.25rem;
+  --lh-price-l: 1.75rem;
+  --fs-title: 1.125rem;
+  --lh-title: 1.625rem;
+  --fs-h2: 1.0625rem;
+  --lh-h2: 1.5rem;
+  --fs-body: 0.9375rem;
+  --lh-body: 1.375rem;
+  --fs-small: 0.8125rem;
+  --lh-small: 1.125rem;
+  --fs-micro: 0.75rem;
+  --lh-micro: 1rem;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 48px;
+
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --transition: 120ms ease-out;
+
+  --page-gutter: var(--space-4);
+  --section-gap: var(--space-7);
+  --card-pad: var(--space-4);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12161b;
+    --surface: #1a2027;
+    --surface-sunk: #232a33;
+    --border: #333c47;
+    --border-strong: #7a8594;
+    --text: #e9edf1;
+    --text-2: #b4bdc8;
+    --text-3: #8d98a5;
+    --deal: #9db0ff;
+    --deal-bg: #1f2a52;
+    --on-deal: #12161b;
+    --btn-bg: #e9edf1;
+    --btn-text: #12161b;
+    --ok: #5cc48d;
+    --ok-bg: #173325;
+    --warn: #e3b04b;
+    --warn-bg: #3a2e12;
+    --crit: #ff8a80;
+    --crit-bg: #42201d;
+    --series-own: #2a9d8f;
+    --series-google: #d57645;
+    --band: rgba(233, 237, 241, 0.09);
+
+    --heat-1: #28655e;
+    --heat-1-text: #e9edf1;
+    --heat-2: #3f9084;
+    --heat-2-text: #0e1418;
+    --heat-3: #5faea0;
+    --heat-3-text: #0e1418;
+    --heat-4: #86c9bc;
+    --heat-4-text: #0e1418;
+    --heat-5: #b2e6db;
+    --heat-5-text: #0e1418;
+  }
+}
+
+@media (min-width: 640px) {
+  :root {
+    --page-gutter: var(--space-6);
+    --card-pad: var(--space-5);
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --page-gutter: var(--space-7);
+    --section-gap: var(--space-8);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition: 0ms;
+  }
+}
