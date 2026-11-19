@@ -1,11 +1,13 @@
 name: collect
 
-# KST 08:00, 14:00, 21:00 = UTC 23:00(전날), 05:00, 12:00
+# 30분마다 순환 수집: 가장 오래 조회하지 않은 목적지 6곳(약 36건)만 조회한다.
+# GitHub Actions 서버에서는 Google 오류 응답 비율이 높고 한 실행 안에서 조회가 길어질수록 더 높아지므로,
+# 한 번에 전체를 조회하지 않고 실행을 나눈다(실행마다 서버가 바뀐다).
 # 출발 가능 기간(~2026-12-30)이 끝나면 수집기는 조회 없이 종료 코드 0 으로 끝난다.
 # 그 뒤에는 저장소의 Actions 탭에서 이 워크플로를 Disable workflow 로 비활성화한다(README 참고).
 on:
   schedule:
-    - cron: "0 23,5,12 * * *"
+    - cron: "7,37 * * * *"
   workflow_dispatch:
     inputs:
       destinations:
@@ -28,9 +30,9 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    # 수집기는 config/trip.yaml 의 pacing.max_run_minutes(150분)를 넘으면 남은 조회를 생략하고 저장한다.
-    # 수집 단계가 그래도 끝나지 않으면 단계 제한 시간(175분)에 종료되고, 커밋 단계는 계속 실행된다.
-    timeout-minutes: 200
+    # 수집기는 --max-minutes(22분)를 넘으면 남은 조회를 생략하고 저장한다.
+    # 수집 단계가 그래도 끝나지 않으면 단계 제한 시간(27분)에 종료되고, 커밋 단계는 계속 실행된다.
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
 
@@ -43,7 +45,7 @@ jobs:
 
       - name: 수집 실행
         id: collect
-        timeout-minutes: 175
+        timeout-minutes: 27
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -51,8 +53,8 @@ jobs:
           INPUT_DESTINATIONS: ${{ github.event.inputs.destinations }}
           INPUT_MAX_QUERIES: ${{ github.event.inputs.max_queries }}
         run: |
-          args=()
-          if [ -n "$INPUT_DESTINATIONS" ]; then args+=(--destinations "$INPUT_DESTINATIONS"); fi
+          args=(--max-minutes 22 --baseline-max 8 --stop-after 8)
+          if [ -n "$INPUT_DESTINATIONS" ]; then args+=(--destinations "$INPUT_DESTINATIONS"); else args+=(--rotate 6); fi
           if [ -n "$INPUT_MAX_QUERIES" ]; then args+=(--max-queries "$INPUT_MAX_QUERIES"); fi
           uv run --no-dev python -m collector.main "${args[@]}"
 

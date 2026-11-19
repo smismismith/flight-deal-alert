@@ -7,6 +7,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import copy
 import os
 import random
@@ -62,6 +63,7 @@ class RunState:
     failed: int = 0
     baseline_queries: int = 0
     consecutive_failures: int = 0
+    expand_low_candidates: bool = False
     aborted_reason: str | None = None
     errors: list[dict] = field(default_factory=list)
     error_kinds: Counter = field(default_factory=Counter)
@@ -142,6 +144,16 @@ def select_expansion(state: RunState, dests: list[Destination], rep_combos: list
     order = {d.code: i for i, d in enumerate(dests)}
     ranked = sorted(rep_min, key=lambda c: (rep_min[c], order[c]))
     chosen = ranked[: state.cfg.expand_top_n]
+    if state.expand_low_candidates:
+        # 순환 수집: 대표 조합 가격이 Google 평소 가격 하한보다 낮은 목적지만 전체 일정으로 확대한다.
+        for code in ranked:
+            if code in chosen:
+                continue
+            for c, (r, _) in state.results.get(code, {}).items():
+                low = r.insight.typical_low_krw if r.insight else None
+                if c in rep_combos and r.flight is not None and low and r.flight.price_krw < low:
+                    chosen.append(code)
+                    break
     for d in dests:
         if d.code in rep_min and d.code not in chosen and active_alert(alerts, d.code) is not None:
             chosen.append(d.code)
@@ -432,12 +444,44 @@ def default_site_url(env: Mapping[str, str]) -> str:
     return f"https://{host}/" if repo.lower() == host else f"https://{host}/{repo}/"
 
 
+ROTATION_FILE = "rotation.json"
+
+
+def load_rotation(read_dir: Path) -> dict[str, str]:
+    """목적지별 마지막 조회 시도 시각. 파일이 없거나 형식이 다르면 빈 값으로 시작한다."""
+    try:
+        raw = json.loads((Path(read_dir) / ROTATION_FILE).read_text(encoding="utf-8"))
+        return {str(k): str(v) for k, v in raw.get("last_attempt_at", {}).items()}
+    except (OSError, ValueError, AttributeError):
+        return {}
+
+
+def save_rotation(write_dir: Path, rotation: dict[str, str]) -> None:
+    path = Path(write_dir) / ROTATION_FILE
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(".json.tmp")
+    tmp.write_text(json.dumps({"last_attempt_at": dict(sorted(rotation.items()))}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    tmp.replace(path)
+
+
+def select_rotation(dests: list[Destination], rotation: dict[str, str], alerts: list[dict], n: int) -> list[Destination]:
+    """가장 오래 조회하지 않은 목적지 n개(조회 기록이 없으면 우선)와 active 알림이 있는 목적지를 목록 순서로 반환한다."""
+    order = {d.code: i for i, d in enumerate(dests)}
+    oldest = sorted(dests, key=lambda d: (rotation.get(d.code, ""), order[d.code]))[:n]
+    chosen = {d.code for d in oldest} | {d.code for d in dests if active_alert(alerts, d.code) is not None}
+    return [d for d in dests if d.code in chosen]
+
+
 def parse_args(argv: list[str] | None) -> argparse.Namespace:
     p = argparse.ArgumentParser(prog="collector.main", description="연말 특가 항공권 수집")
     p.add_argument("--dry-run", action="store_true", help="텔레그램 발송과 data/ 저장을 하지 않는다(--out 을 주면 그 폴더에만 저장)")
     p.add_argument("--limit", type=int, default=None, help="목록 앞에서부터 N개 목적지만 조회")
     p.add_argument("--destinations", default=None, help="조회할 목적지 코드(쉼표 구분)")
     p.add_argument("--max-queries", type=int, default=None, help="조회 건수 상한(기준가 조회 포함). 초과분은 생략")
+    p.add_argument("--rotate", type=int, default=None, help="순환 수집: 가장 오래 조회하지 않은 목적지 N개만 조회(특가 알림이 있는 목적지는 항상 포함)")
+    p.add_argument("--max-minutes", type=float, default=None, help="실행 시간 상한(분). 지정하면 설정 파일 값 대신 사용")
+    p.add_argument("--baseline-max", type=int, default=None, help="기준가 조회 건수 상한. 지정하면 설정 파일 값 대신 사용")
+    p.add_argument("--stop-after", type=int, default=None, help="수집 중단 안내를 보내는 연속 실패 실행 수. 지정하면 설정 파일 값 대신 사용")
     p.add_argument("--max-requests", type=int, default=None, help="HTTP 요청 수 상한(재시도 포함)")
     p.add_argument("--out", default=None, help="결과를 저장할 폴더")
     p.add_argument("--data", default=str(ROOT / "data"), help="이전 상태를 읽는 폴더(기본 data/)")
@@ -451,6 +495,14 @@ def run(argv: list[str] | None = None, deps: Deps | None = None) -> int:
     cfg = load_config(Path(args.config))
     if not cfg.site_url:
         cfg.site_url = default_site_url(deps.env)
+    if args.max_minutes is not None:
+        cfg.max_run_minutes = args.max_minutes
+    if args.baseline_max is not None:
+        cfg.baseline_max_queries = max(args.baseline_max, 0)
+    if args.rotate is not None:
+        cfg.expand_top_n = 0
+    if args.stop_after is not None:
+        cfg.stop_after_failed_runs = max(args.stop_after, 1)
     if args.dry_run:
         store = DataStore(Path(args.data), Path(args.out) if args.out else None)
     else:
@@ -490,6 +542,10 @@ def run(argv: list[str] | None = None, deps: Deps | None = None) -> int:
         prev_latest = store.load_latest()
         histories = {d.code: store.load_history(d.code) for d in cfg.destinations}
 
+        if args.rotate is not None:
+            rotation = load_rotation(store.read_dir)
+            selected[:] = select_rotation(selected, rotation, alerts, max(args.rotate, 0))
+            state.expand_low_candidates = True
         collect(state, selected, alerts, today)
         if state.period_over:
             raise _PeriodOver()
@@ -512,6 +568,11 @@ def run(argv: list[str] | None = None, deps: Deps | None = None) -> int:
                 store.save_history(d, histories[d.code], cfg.keep_history)
         store.save_alerts(alerts, now_iso)
         store.save_latest_and_index(cfg, entries, {c for c, p in histories.items() if p}, run_id, now_iso)
+        if args.rotate is not None and store.write_dir is not None:
+            for d in selected:
+                if state.dest_attempted[d.code] > 0:
+                    rotation[d.code] = now_iso
+            save_rotation(store.write_dir, rotation)
     except _PeriodOver:  # 조회 대상이 없으면 data/ 의 가격·알림 파일을 변경하지 않는다
         pass
     except Exception as e:  # 처리 중 예외: 실행을 failed 로 기록하고 status.json 은 저장한다

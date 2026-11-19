@@ -567,3 +567,29 @@ def test_serpapi_month_counter_resets(cfg, tmp_path):
     sim = Sim(normal_responder(cfg), start=datetime(2026, 12, 1, 8, 0, 0, tzinfo=KST))
     assert run(["--out", str(out), "--limit", "1", "--max-queries", "1"], sim.deps()) == 0
     assert load(out, "status.json")["serpapi"] == {"month": "2026-12", "calls": 0}
+
+
+def test_select_rotation_picks_oldest_and_active_alerts():
+    """순환 수집: 조회 기록이 없는 목적지 우선, 그다음 오래된 순서. active 알림 목적지는 항상 포함."""
+    from collector.config import load_config
+    from collector.main import select_rotation
+
+    cfg = load_config()
+    dests = list(cfg.destinations)[:6]
+    codes = [d.code for d in dests]
+    rotation = {codes[0]: "2026-11-19T10:00:00+09:00", codes[1]: "2026-11-19T08:00:00+09:00",
+                codes[2]: "2026-11-19T09:00:00+09:00", codes[3]: "2026-11-19T11:00:00+09:00"}
+    picked = [d.code for d in select_rotation(dests, rotation, [], 3)]
+    assert picked == [codes[1], codes[4], codes[5]]  # 기록 없는 2곳 + 가장 오래된 1곳, 목록 순서
+    alerts = [{"destination": codes[3], "status": "active"}]
+    assert codes[3] in [d.code for d in select_rotation(dests, rotation, alerts, 3)]
+
+
+def test_rotation_file_round_trip(tmp_path):
+    from collector.main import load_rotation, save_rotation
+
+    assert load_rotation(tmp_path) == {}
+    save_rotation(tmp_path, {"KIX": "2026-11-19T10:00:00+09:00"})
+    assert load_rotation(tmp_path) == {"KIX": "2026-11-19T10:00:00+09:00"}
+    (tmp_path / "rotation.json").write_text("not json", encoding="utf-8")
+    assert load_rotation(tmp_path) == {}
